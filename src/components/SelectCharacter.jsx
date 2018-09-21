@@ -3,10 +3,10 @@ import React from 'react';
 import CharacterConfirmation from './CharacterConfirmation';
 import characterPortrait from './../assets/images/Temp-Character-Portrait.jpg';
 
-function SelectCharacter(props)
+function SelectCharacter()
 {
 
-  let confirmationDiv = <CharacterConfirmation/>
+  let confirmationDiv = <CharacterConfirmation/>;
 
   return(
     <div>

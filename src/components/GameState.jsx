@@ -5,7 +5,7 @@ import EventUI from './EventUI';
 function GameState()
 {
 
-  let eventUI = <EventUI/>
+  let eventUI = <EventUI/>;
 
   return(
     <div>

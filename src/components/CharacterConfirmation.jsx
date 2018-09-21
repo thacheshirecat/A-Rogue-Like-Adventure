@@ -29,7 +29,7 @@ function CharacterConfirmation()
         <Link to='/game'><button className='button1'>Yes</button></Link><button className='button2'>No</button>
       </div>
     </div>
-  )
+  );
 }
 
 export default CharacterConfirmation;

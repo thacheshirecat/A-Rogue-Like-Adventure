@@ -14,7 +14,7 @@ function EventUI()
       <hr/>
       <button>Option 3</button>
     </div>
-  )
+  );
 }
 
 export default EventUI;
