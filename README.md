@@ -39,7 +39,7 @@
   ![alt text](https://raw.githubusercontent.com/thacheshirecat/A-Rogue-Like-Adventure/master/src/assets/images/A-Rogue-Like-Adventure-Mock-UI.jpg)
 
 #### Component Tree
-  * Coming Soon
+  ![alt text](https://raw.githubusercontent.com/thacheshirecat/A-Rogue-Like-Adventure/master/src/assets/images/A-Rogue-Like-Adventure-Component-Tree.jpg)
 
 #### Technologies Used
   * React
