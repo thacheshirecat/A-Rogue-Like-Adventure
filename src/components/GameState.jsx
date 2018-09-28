@@ -6,7 +6,7 @@ import EventUI from './EventUI';
 function GameState(props)
 {
 
-  let eventUI = <EventUI eventData={props.eventData}/>;
+  let eventUI = <EventUI eventData={props.eventData} currentEvent={props.currentEvent}/>;
 
   return(
     <div>
@@ -37,7 +37,8 @@ function GameState(props)
 }
 
 GameState.propTypes = {
-  eventData: PropTypes.object
+  eventData: PropTypes.object,
+  currentEvent: PropTypes.string
 };
 
 export default GameState;

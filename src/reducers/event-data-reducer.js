@@ -1,5 +1,5 @@
 const eventData = {
-  1 : {
+  intro : {
     eventName: 'Begin Again',
     eventType: 'dialogue',
     optionOneText: 'Head West',

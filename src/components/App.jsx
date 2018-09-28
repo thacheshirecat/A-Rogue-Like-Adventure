@@ -22,12 +22,14 @@ class App extends React.Component
           <Route
             path='/newgame' render={()=><SelectCharacter
               characterData={this.props.characterData}
-              selectedCharacter={this.props.selectedCharacter}/>} />
+              selectedCharacter={this.props.selectedCharacter}
+              currentEvent={this.props.currentEvent}/>} />
           <Route
             path='/game'
             render={()=><GameState
               eventData={this.props.eventData}
-              selectedCharacter={this.props.selectedCharacter}/>} />
+              selectedCharacter={this.props.selectedCharacter}
+              currentEvent={this.props.currentEvent}/>} />
           <Route component={Error404} />
         </Switch>
       </div>
@@ -38,14 +40,16 @@ class App extends React.Component
 App.propTypes = {
   eventData: PropTypes.object,
   characterData: PropTypes.object,
-  selectedCharacter: PropTypes.object
+  selectedCharacter: PropTypes.object,
+  currentEvent: PropTypes.string
 };
 
 const mapStateToProps = state => {
   return {
     eventData: state.eventData,
     characterData: state.characterData,
-    selectedCharacter: state.selectedCharacter
+    selectedCharacter: state.selectedCharacter,
+    currentEvent: state.currentEvent
   };
 };
 

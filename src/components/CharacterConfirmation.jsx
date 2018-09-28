@@ -17,6 +17,16 @@ function CharacterConfirmation(props)
     dispatch(action);
   }
 
+  function handleStartingGame(eventId)
+  {
+    const { dispatch } = props;
+    const action = {
+      type: 'CHANGE_EVENT',
+      eventId: eventId
+    };
+    dispatch(action);
+  }
+
   return(
     <div className='card'>
       <style jsx>{`
@@ -41,7 +51,7 @@ function CharacterConfirmation(props)
       <h3>You Have Selected: {props.selectedCharacter.name}</h3>
       <h4>Are You Sure?</h4>
       <div>
-        <Link to='/game'><button className='button1'>Yes</button></Link><button className='button2' onClick={() => {handleDeselectingCharacter(deselectedCharacter);}}>No</button>
+        <Link to='/game'><button className='button1' onClick={() => {handleStartingGame('intro');}}>Yes</button></Link><button className='button2' onClick={() => {handleDeselectingCharacter(deselectedCharacter);}}>No</button>
       </div>
     </div>
   );

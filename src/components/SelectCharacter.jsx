@@ -71,6 +71,7 @@ function SelectCharacter(props)
 SelectCharacter.propTypes = {
   characterData: PropTypes.object.isRequired,
   selectedCharacter: PropTypes.object.isRequired,
+  currentEvent: PropTypes.string,
   dispatch: PropTypes.func
 };
 
