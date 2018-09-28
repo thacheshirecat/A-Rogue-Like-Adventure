@@ -1,12 +1,22 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import CharacterConfirmation from './CharacterConfirmation';
 import characterPortrait from './../assets/images/Temp-Character-Portrait.jpg';
 
-function SelectCharacter()
+function SelectCharacter(props)
 {
+  let confirmationDiv = null;
+  if (props.selectedCharacter.length > 0)
+  {
+    confirmationDiv = <CharacterConfirmation/>;
+  }
 
-  let confirmationDiv = <CharacterConfirmation/>;
+  function handleSelectingSlips()
+  {
+    
+  }
+
 
   return(
     <div>
@@ -20,29 +30,29 @@ function SelectCharacter()
             background-color: crimson;
           }
       `}</style>
-      <h1> Select Character</h1>
-      <div className='card'>
+      <h1>Select Character</h1>
+      <div className='card' onClick={handleSelectingSlips}>
         <div>
           <img src={characterPortrait}/>
-          <h3>Name: Name 1</h3>
+          <h3>Name: {props.characterData[1].name}</h3>
         </div>
-        <p>Description: Description 1</p>
+        <p>Description: {props.characterData[1].description}</p>
       </div>
       <hr/>
       <div className='card'>
         <div>
           <img src={characterPortrait}/>
-          <h3>Name: Name 2</h3>
+          <h3>Name: {props.characterData[2].name}</h3>
         </div>
-        <p>Description: Description 2</p>
+        <p>Description: {props.characterData[2].description}</p>
       </div>
       <hr/>
       <div className='card'>
         <div>
           <img src={characterPortrait}/>
-          <h3>Name: Name 3</h3>
+          <h3>Name: {props.characterData[3].name}</h3>
         </div>
-        <p>Description: Description 3</p>
+        <p>Description: {props.characterData[3].description}</p>
       </div>
       <br/>
       <div>
@@ -52,5 +62,10 @@ function SelectCharacter()
 
   );
 }
+
+SelectCharacter.propTypes = {
+  characterData: PropTypes.object.isRequired,
+  selectedCharacter: PropTypes.object.isRequired
+};
 
 export default SelectCharacter;
