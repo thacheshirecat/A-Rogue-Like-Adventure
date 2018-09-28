@@ -1,5 +1,7 @@
 import React from 'react';
-import { Switch, Route } from 'react-router-dom';
+import PropTypes from 'prop-types';
+import { Switch, Route, withRouter } from 'react-router-dom';
+import { connect } from 'react-redux';
 
 import Main from './Main';
 import Tutorial from './Tutorial';
@@ -8,19 +10,33 @@ import GameState from './GameState';
 import Error404 from './Error404';
 
 
-function App()
+class App extends React.Component
 {
-  return (
-    <div className="container">
-      <Switch>
-        <Route exact path='/' component={Main} />
-        <Route path='/tutorial' component={Tutorial} />
-        <Route path='/newgame' component={SelectCharacter} />
-        <Route path='/game' component={GameState} />
-        <Route component={Error404} />
-      </Switch>
-    </div>
-  );
+
+  render()
+  {
+    return (
+      <div className="container">
+        <Switch>
+          <Route exact path='/' component={Main} />
+          <Route path='/tutorial' component={Tutorial} />
+          <Route path='/newgame' component={SelectCharacter} />
+          <Route path='/game' render={()=><GameState eventData={this.props.eventData} />} />
+          <Route component={Error404} />
+        </Switch>
+      </div>
+    );
+  }
 }
 
-export default App;
+App.propTypes = {
+  eventData: PropTypes.object
+};
+
+const mapStateToProps = state => {
+  return {
+    eventData: state.EventData
+  };
+};
+
+export default withRouter(connect(mapStateToProps)(App));
