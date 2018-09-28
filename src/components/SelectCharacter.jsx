@@ -1,22 +1,29 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
 
 import CharacterConfirmation from './CharacterConfirmation';
 import characterPortrait from './../assets/images/Temp-Character-Portrait.jpg';
 
 function SelectCharacter(props)
 {
+
   let confirmationDiv = null;
-  if (props.selectedCharacter.length > 0)
+  console.log(Object.keys(props.selectedCharacter).length);
+  if (Object.keys(props.selectedCharacter).length > 0)
   {
     confirmationDiv = <CharacterConfirmation/>;
   }
 
-  function handleSelectingSlips()
+  function handleSelectingSlips(character)
   {
-    
+    const { dispatch } = props;
+    const action = {
+      type: 'SELECT_CHARACTER',
+      character: character
+    };
+    dispatch(action);
   }
-
 
   return(
     <div>
@@ -31,7 +38,7 @@ function SelectCharacter(props)
           }
       `}</style>
       <h1>Select Character</h1>
-      <div className='card' onClick={handleSelectingSlips}>
+      <div className='card' onClick={() => {handleSelectingSlips(props.characterData[1]);}}>
         <div>
           <img src={characterPortrait}/>
           <h3>Name: {props.characterData[1].name}</h3>
@@ -68,4 +75,4 @@ SelectCharacter.propTypes = {
   selectedCharacter: PropTypes.object.isRequired
 };
 
-export default SelectCharacter;
+export default connect()(SelectCharacter);
