@@ -1,11 +1,12 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-function EventUI()
+function EventUI(props)
 {
   return(
     <div>
       <div className='card'>
-        <p>Event Dialogue</p>
+        <p>{props.eventData['1'].eventName}</p>
       </div>
       <br/>
       <button>Option 1</button>
@@ -16,5 +17,9 @@ function EventUI()
     </div>
   );
 }
+
+EventUI.propTypes = {
+  eventData: PropTypes.object
+};
 
 export default EventUI;

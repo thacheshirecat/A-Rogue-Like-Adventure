@@ -1,11 +1,12 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import EventUI from './EventUI';
 
-function GameState()
+function GameState(props)
 {
 
-  let eventUI = <EventUI/>;
+  let eventUI = <EventUI eventData={props.eventData}/>;
 
   return(
     <div>
@@ -38,5 +39,9 @@ function GameState()
     </div>
   );
 }
+
+GameState.propTypes = {
+  eventData: PropTypes.object
+};
 
 export default GameState;

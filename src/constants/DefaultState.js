@@ -1,5 +1,5 @@
-export const EventData = {
-  '1' : {
+export const eventData = {
+  1 : {
     eventName: 'Begin Again',
     eventType: 'dialogue',
     optionOneText: 'Head West',
