@@ -9,10 +9,9 @@ function SelectCharacter(props)
 {
 
   let confirmationDiv = null;
-  console.log(Object.keys(props.selectedCharacter).length);
   if (Object.keys(props.selectedCharacter).length > 0)
   {
-    confirmationDiv = <CharacterConfirmation/>;
+    confirmationDiv = <CharacterConfirmation selectedCharacter={props.selectedCharacter}/>;
   }
 
   function handleSelectingSlips(character)
