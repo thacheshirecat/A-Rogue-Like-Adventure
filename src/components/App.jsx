@@ -9,7 +9,6 @@ import SelectCharacter from './SelectCharacter';
 import GameState from './GameState';
 import Error404 from './Error404';
 
-
 class App extends React.Component
 {
 
@@ -35,7 +34,7 @@ App.propTypes = {
 
 const mapStateToProps = state => {
   return {
-    eventData: state.EventData
+    eventData: state.eventData
   };
 };
 

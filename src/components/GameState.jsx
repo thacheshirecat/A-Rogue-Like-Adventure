@@ -21,14 +21,10 @@ function GameState(props)
           .header{
             background-color: crimson;
           }
-          h3 {
-            text-align: center;
-          }
       `}</style>
       <div className='header'>
         <h4>Turn: 1</h4>
       </div>
-      <h3>Event Name</h3>
       <div>
         {eventUI}
       </div>

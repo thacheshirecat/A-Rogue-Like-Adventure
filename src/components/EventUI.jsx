@@ -5,15 +5,21 @@ function EventUI(props)
 {
   return(
     <div>
+      <style jsx>{`
+        h3 {
+          text-align: center;
+        }
+      `}</style>
+      <h3>{props.eventData['1'].eventName}</h3>
       <div className='card'>
-        <p>{props.eventData['1'].eventName}</p>
+        <p>Event dialogue</p>
       </div>
       <br/>
-      <button>Option 1</button>
+      <button>{props.eventData['1'].optionOneText}</button>
       <hr/>
-      <button>Option 2</button>
+      <button>{props.eventData['1'].optionTwoText}</button>
       <hr/>
-      <button>Option 3</button>
+      <button>{props.eventData['1'].optionThreeText}</button>
     </div>
   );
 }
