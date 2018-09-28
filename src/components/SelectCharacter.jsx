@@ -7,7 +7,6 @@ import characterPortrait from './../assets/images/Temp-Character-Portrait.jpg';
 
 function SelectCharacter(props)
 {
-
   let confirmationDiv = null;
   if (Object.keys(props.selectedCharacter).length > 0)
   {
