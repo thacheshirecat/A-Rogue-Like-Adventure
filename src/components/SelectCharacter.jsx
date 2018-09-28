@@ -13,7 +13,7 @@ function SelectCharacter(props)
     confirmationDiv = <CharacterConfirmation selectedCharacter={props.selectedCharacter}/>;
   }
 
-  function handleSelectingSlips(character)
+  function handleSelectingCharacter(character)
   {
     const { dispatch } = props;
     const action = {
@@ -36,7 +36,7 @@ function SelectCharacter(props)
           }
       `}</style>
       <h1>Select Character</h1>
-      <div className='card' onClick={() => {handleSelectingSlips(props.characterData[1]);}}>
+      <div className='card' onClick={() => {handleSelectingCharacter(props.characterData[1]);}}>
         <div>
           <img src={characterPortrait}/>
           <h3>Name: {props.characterData[1].name}</h3>
@@ -44,7 +44,7 @@ function SelectCharacter(props)
         <p>Description: {props.characterData[1].description}</p>
       </div>
       <hr/>
-      <div className='card'>
+      <div className='card' onClick={() => {handleSelectingCharacter(props.characterData[2]);}}>
         <div>
           <img src={characterPortrait}/>
           <h3>Name: {props.characterData[2].name}</h3>
@@ -52,7 +52,7 @@ function SelectCharacter(props)
         <p>Description: {props.characterData[2].description}</p>
       </div>
       <hr/>
-      <div className='card'>
+      <div className='card' onClick={() => {handleSelectingCharacter(props.characterData[3]);}}>
         <div>
           <img src={characterPortrait}/>
           <h3>Name: {props.characterData[3].name}</h3>
