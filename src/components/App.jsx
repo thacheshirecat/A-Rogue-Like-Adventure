@@ -34,7 +34,8 @@ App.propTypes = {
 
 const mapStateToProps = state => {
   return {
-    eventData: state.eventData
+    eventData: state.eventData,
+    characterData: state.characterData
   };
 };
 
