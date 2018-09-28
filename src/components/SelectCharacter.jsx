@@ -70,7 +70,8 @@ function SelectCharacter(props)
 
 SelectCharacter.propTypes = {
   characterData: PropTypes.object.isRequired,
-  selectedCharacter: PropTypes.object.isRequired
+  selectedCharacter: PropTypes.object.isRequired,
+  dispatch: PropTypes.func
 };
 
 export default connect()(SelectCharacter);

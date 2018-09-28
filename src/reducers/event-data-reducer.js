@@ -1,5 +1,3 @@
-// import eventData from './../constants/DefaultState';
-
 const eventData = {
   1 : {
     eventName: 'Begin Again',
@@ -19,8 +17,6 @@ const eventData = {
 
 export default (state = eventData, action) => {
   switch (action.type) {
-  case 'CHANGE_EVENT':
-    return state;
   default:
     return state;
   }

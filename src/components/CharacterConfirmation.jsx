@@ -48,7 +48,8 @@ function CharacterConfirmation(props)
 }
 
 CharacterConfirmation.propTypes = {
-  selectedCharacter: PropTypes.object
+  selectedCharacter: PropTypes.object,
+  dispatch: PropTypes.func
 };
 
 export default connect()(CharacterConfirmation);
