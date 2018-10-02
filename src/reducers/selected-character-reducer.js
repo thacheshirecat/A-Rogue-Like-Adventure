@@ -1,7 +1,19 @@
 export default (state = {}, action) => {
-  switch (action.type) {
+  let newState;
+  const { name, description, sneaky, dashing, cunning, hp, turnCounter } = action;
+
+  switch (action.type)
+  {
   case 'SELECT_CHARACTER':
     return action.character;
+
+  case 'ADVANCE_TURN':
+    newState = Object.assign({}, state, {
+      turnCounter: action.newTurn
+    });
+    console.log(newState);
+    return newState;
+
   default:
     return state;
   }

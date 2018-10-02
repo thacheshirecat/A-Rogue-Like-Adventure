@@ -1,12 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
 
 import EventUI from './EventUI';
 
 function GameState(props)
 {
 
-  let eventUI = <EventUI eventData={props.eventData} currentEvent={props.currentEvent}/>;
+  let eventUI = <EventUI eventData={props.eventData} currentEvent={props.currentEvent} selectedCharacter={props.selectedCharacter}/>;
 
   return(
     <div>
@@ -38,7 +39,8 @@ function GameState(props)
 
 GameState.propTypes = {
   eventData: PropTypes.object,
+  selectedCharacter: PropTypes. object,
   currentEvent: PropTypes.string
 };
 
-export default GameState;
+export default connect()(GameState);
