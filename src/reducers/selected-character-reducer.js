@@ -1,6 +1,6 @@
 export default (state = {}, action) => {
   let newState;
-  const { name, description, sneaky, dashing, cunning, hp, turnCounter } = action;
+  // const { name, description, sneaky, dashing, cunning, hp, turnCounter } = action;
 
   switch (action.type)
   {

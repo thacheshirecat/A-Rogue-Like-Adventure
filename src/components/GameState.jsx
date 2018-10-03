@@ -7,7 +7,11 @@ import EventUI from './EventUI';
 function GameState(props)
 {
 
-  let eventUI = <EventUI eventData={props.eventData} currentEvent={props.currentEvent} selectedCharacter={props.selectedCharacter}/>;
+  let eventUI = <EventUI
+    eventData={props.eventData}
+    currentEvent={props.currentEvent}
+    selectedCharacter={props.selectedCharacter}
+    gamePhase={props.gamePhase}/>;
 
   return(
     <div>
@@ -24,14 +28,14 @@ function GameState(props)
           }
       `}</style>
       <div className='header'>
-        <h4>Turn: 1</h4>
+        <h4>Turn: {props.selectedCharacter.turnCounter}</h4>
       </div>
       <div>
         {eventUI}
       </div>
       <div className='footer'>
-        <h4>Character Name</h4>
-        <h4>HP: 10</h4>
+        <h4>{props.selectedCharacter.name}</h4>
+        <h4>HP: {props.selectedCharacter.hp}</h4>
       </div>
     </div>
   );
@@ -40,7 +44,8 @@ function GameState(props)
 GameState.propTypes = {
   eventData: PropTypes.object,
   selectedCharacter: PropTypes. object,
-  currentEvent: PropTypes.string
+  currentEvent: PropTypes.string,
+  gameState: PropTypes.string
 };
 
 export default connect()(GameState);

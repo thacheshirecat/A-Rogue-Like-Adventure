@@ -2,45 +2,50 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 
+import ContinueUI from './ContinueUI';
+
 function EventUI(props)
 {
 
   function handleOptionOne()
   {
-
+    const { dispatch } = props;
+    const action3 = {
+      type: 'CHANGE_PHASE',
+      phase: 'continue'
+    };
+    dispatch(action3);
   }
 
   function handleOptionTwo()
   {
-
+    const { dispatch } = props;
+    const action3 = {
+      type: 'CHANGE_PHASE',
+      phase: 'continue'
+    };
+    dispatch(action3);
   }
 
   function handleOptionThree()
   {
-
+    const { dispatch } = props;
+    const action3 = {
+      type: 'CHANGE_PHASE',
+      phase: 'continue'
+    };
+    dispatch(action3);
   }
 
-  function handleSelectNewEvent()
+  let textToDisplay = props.eventData[props.currentEvent].eventInitialText;
+  let continueDiv = null;
+  if(props.gamePhase === 'continue')
   {
-    let randomEvent = Math.floor(Math.random() * (11 - 1) + 1).toString();
-    let newEventTest = (props.selectedCharacter.turnCounter).toString() + '00000' + randomEvent;
-    console.log(newEventTest);
-    let newEvent = 'intro';
-    let nextTurn = (props.selectedCharacter.turnCounter) + 1;
-    console.log(props.selectedCharacter.turnCounter);
-
-    const { dispatch } = props;
-    const action = {
-      type: 'CHANGE_EVENT',
-      eventId: newEvent
-    };
-    dispatch(action);
-
-    const action2 = {
-      type: 'ADVANCE_TURN',
-      newTurn: nextTurn
-    };
-    dispatch(action2);
+    continueDiv = <ContinueUI
+      eventData={props.eventData}
+      currentEvent={props.currentEvent}
+      selectedCharacter={props.selectedCharacter}
+      gamePhase={props.gamePhase}/>;
   }
 
   return(
@@ -52,17 +57,18 @@ function EventUI(props)
       `}</style>
       <h3>{props.eventData[props.currentEvent].eventName}</h3>
       <div className='card'>
-        <p>Event dialogue</p>
+        <p>{textToDisplay}</p>
       </div>
       <br/>
-      <button onClick={() => {handleOptionOne();}}>{props.eventData[props.currentEvent].optionOneText}</button>
+      <button onClick={() => {handleOptionOne();}}>{props.eventData[props.currentEvent].optionOne.buttonText}</button>
       <hr/>
-      <button onClick={() => {handleOptionTwo();}}>{props.eventData[props.currentEvent].optionTwoText}</button>
+      <button onClick={() => {handleOptionTwo();}}>{props.eventData[props.currentEvent].optionTwo.buttonText}</button>
       <hr/>
-      <button onClick={() => {handleOptionThree();}}>{props.eventData[props.currentEvent].optionThreeText}</button>
+      <button onClick={() => {handleOptionThree();}}>{props.eventData[props.currentEvent].optionThree.buttonText}</button>
+      <hr/>
 
       <div>
-        <button onClick={() => {handleSelectNewEvent();}}>Continue</button>
+        {continueDiv}
       </div>
     </div>
   );
@@ -71,7 +77,8 @@ function EventUI(props)
 EventUI.propTypes = {
   eventData: PropTypes.object,
   selectedCharacter: PropTypes. object,
-  currentEvent: PropTypes.string
+  currentEvent: PropTypes.string,
+  gamePhase: PropTypes.string
 };
 
 export default connect()(EventUI);
