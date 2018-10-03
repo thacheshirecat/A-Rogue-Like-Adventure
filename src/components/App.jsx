@@ -23,7 +23,8 @@ class App extends React.Component
             path='/newgame' render={()=><SelectCharacter
               characterData={this.props.characterData}
               selectedCharacter={this.props.selectedCharacter}
-              currentEvent={this.props.currentEvent}/>} />
+              currentEvent={this.props.currentEvent}
+              gamePhase={this.props.gamePhase}/>} />
           <Route
             path='/game'
             render={()=><GameState

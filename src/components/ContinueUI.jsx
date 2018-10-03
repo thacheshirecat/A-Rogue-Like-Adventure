@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 
-function Continue(props)
+function ContinueUI(props)
 {
 
   function handleSelectNewEvent()
@@ -38,11 +38,11 @@ function Continue(props)
   );
 }
 
-EventUI.propTypes = {
+ContinueUI.propTypes = {
   eventData: PropTypes.object,
   selectedCharacter: PropTypes. object,
   currentEvent: PropTypes.string,
   gamePhase: PropTypes.string
 };
 
-export default connect()(Continue);
+export default connect()(ContinueUI);

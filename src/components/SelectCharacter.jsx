@@ -10,7 +10,7 @@ function SelectCharacter(props)
   let confirmationDiv = null;
   if (Object.keys(props.selectedCharacter).length > 0)
   {
-    confirmationDiv = <CharacterConfirmation selectedCharacter={props.selectedCharacter}/>;
+    confirmationDiv = <CharacterConfirmation selectedCharacter={props.selectedCharacter} gamePhase={props.gamePhase}/>;
   }
 
   function handleSelectingCharacter(character)
@@ -72,6 +72,7 @@ SelectCharacter.propTypes = {
   characterData: PropTypes.object.isRequired,
   selectedCharacter: PropTypes.object.isRequired,
   currentEvent: PropTypes.string,
+  gamePhase: PropTypes.string,
   dispatch: PropTypes.func
 };
 

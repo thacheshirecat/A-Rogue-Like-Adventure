@@ -25,6 +25,12 @@ function CharacterConfirmation(props)
       eventId: eventId
     };
     dispatch(action);
+
+    const action2 = {
+      type: 'CHANGE_PHASE',
+      phase: 'options'
+    };
+    dispatch(action2);
   }
 
   return(
@@ -59,6 +65,7 @@ function CharacterConfirmation(props)
 
 CharacterConfirmation.propTypes = {
   selectedCharacter: PropTypes.object,
+  gamePhase: PropTypes.string,
   dispatch: PropTypes.func
 };
 

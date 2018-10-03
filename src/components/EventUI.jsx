@@ -3,41 +3,26 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 
 import ContinueUI from './ContinueUI';
+import OptionsUI from './OptionsUI';
 
 function EventUI(props)
 {
-
-  function handleOptionOne()
-  {
-    const { dispatch } = props;
-    const action3 = {
-      type: 'CHANGE_PHASE',
-      phase: 'continue'
-    };
-    dispatch(action3);
-  }
-
-  function handleOptionTwo()
-  {
-    const { dispatch } = props;
-    const action3 = {
-      type: 'CHANGE_PHASE',
-      phase: 'continue'
-    };
-    dispatch(action3);
-  }
-
-  function handleOptionThree()
-  {
-    const { dispatch } = props;
-    const action3 = {
-      type: 'CHANGE_PHASE',
-      phase: 'continue'
-    };
-    dispatch(action3);
-  }
-
   let textToDisplay = props.eventData[props.currentEvent].eventInitialText;
+
+  let optionsDiv = null;
+  if (props.gamePhase === 'options')
+  {
+    optionsDiv = <OptionsUI
+      eventData={props.eventData}
+      currentEvent={props.currentEvent}
+      selectedCharacter={props.selectedCharacter}
+      gamePhase={props.gamePhase}/>;
+  }
+  else
+  {
+    optionsDiv = null;
+  }
+  
   let continueDiv = null;
   if(props.gamePhase === 'continue')
   {
@@ -60,12 +45,11 @@ function EventUI(props)
         <p>{textToDisplay}</p>
       </div>
       <br/>
-      <button onClick={() => {handleOptionOne();}}>{props.eventData[props.currentEvent].optionOne.buttonText}</button>
-      <hr/>
-      <button onClick={() => {handleOptionTwo();}}>{props.eventData[props.currentEvent].optionTwo.buttonText}</button>
-      <hr/>
-      <button onClick={() => {handleOptionThree();}}>{props.eventData[props.currentEvent].optionThree.buttonText}</button>
-      <hr/>
+
+      <div>
+        {optionsDiv}
+      </div>
+
 
       <div>
         {continueDiv}
