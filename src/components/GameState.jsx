@@ -11,7 +11,8 @@ function GameState(props)
     eventData={props.eventData}
     currentEvent={props.currentEvent}
     selectedCharacter={props.selectedCharacter}
-    gamePhase={props.gamePhase}/>;
+    gamePhase={props.gamePhase}
+    currentDialogue={props.currentDialogue}/>;
 
   return(
     <div>
@@ -45,7 +46,8 @@ GameState.propTypes = {
   eventData: PropTypes.object,
   selectedCharacter: PropTypes. object,
   currentEvent: PropTypes.string,
-  gameState: PropTypes.string
+  gameState: PropTypes.string,
+  currentDialogue: PropTypes.string
 };
 
 export default connect()(GameState);

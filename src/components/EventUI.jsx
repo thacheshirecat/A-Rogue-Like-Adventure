@@ -7,8 +7,6 @@ import OptionsUI from './OptionsUI';
 
 function EventUI(props)
 {
-  let textToDisplay = props.eventData[props.currentEvent].eventInitialText;
-
   let optionsDiv = null;
   if (props.gamePhase === 'options')
   {
@@ -22,7 +20,7 @@ function EventUI(props)
   {
     optionsDiv = null;
   }
-  
+
   let continueDiv = null;
   if(props.gamePhase === 'continue')
   {
@@ -42,7 +40,7 @@ function EventUI(props)
       `}</style>
       <h3>{props.eventData[props.currentEvent].eventName}</h3>
       <div className='card'>
-        <p>{textToDisplay}</p>
+        <p>{props.currentDialogue}</p>
       </div>
       <br/>
 

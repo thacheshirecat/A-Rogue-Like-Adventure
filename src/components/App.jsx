@@ -21,17 +21,20 @@ class App extends React.Component
           <Route path='/tutorial' component={Tutorial} />
           <Route
             path='/newgame' render={()=><SelectCharacter
+              eventData={this.props.eventData}
               characterData={this.props.characterData}
               selectedCharacter={this.props.selectedCharacter}
               currentEvent={this.props.currentEvent}
-              gamePhase={this.props.gamePhase}/>} />
+              gamePhase={this.props.gamePhase}
+              currentDialogue={this.props.currentDialogue}/>} />
           <Route
             path='/game'
             render={()=><GameState
               eventData={this.props.eventData}
               selectedCharacter={this.props.selectedCharacter}
               currentEvent={this.props.currentEvent}
-              gamePhase={this.props.gamePhase} />} />
+              gamePhase={this.props.gamePhase}
+              currentDialogue={this.props.currentDialogue} />} />
           <Route component={Error404} />
         </Switch>
       </div>
@@ -44,7 +47,8 @@ App.propTypes = {
   characterData: PropTypes.object,
   selectedCharacter: PropTypes.object,
   currentEvent: PropTypes.string,
-  gamePhase: PropTypes.string
+  gamePhase: PropTypes.string,
+  currentDialogue: PropTypes.string
 };
 
 const mapStateToProps = state => {
@@ -53,7 +57,8 @@ const mapStateToProps = state => {
     characterData: state.characterData,
     selectedCharacter: state.selectedCharacter,
     currentEvent: state.currentEvent,
-    gamePhase: state.gamePhase
+    gamePhase: state.gamePhase,
+    currentDialogue: state.currentDialogue
   };
 };
 

@@ -44,7 +44,7 @@ function OptionsUI(props)
       <button onClick={() => {handleOptionThree();}}>{props.eventData[props.currentEvent].optionThree.buttonText}</button>
       <hr/>
     </div>
-  )
+  );
 }
 
 OptionsUI.propTypes = {
