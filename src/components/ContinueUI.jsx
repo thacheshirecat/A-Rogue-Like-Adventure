@@ -5,41 +5,33 @@ import { connect } from 'react-redux';
 function ContinueUI(props)
 {
 
-  function handleSelectNewEvent()
+  function handleMoveToNextEvent()
   {
-    let randomEvent = Math.floor(Math.random() * (11 - 1) + 1).toString();
-    let newEvent = (props.selectedCharacter.turnCounter + 1).toString() + '00000' + randomEvent;
     let nextTurn = (props.selectedCharacter.turnCounter) + 1;
 
     const { dispatch } = props;
     const action = {
-      type: 'CHANGE_EVENT',
-      eventId: newEvent
+      type: 'ADVANCE_TURN',
+      newTurn: nextTurn
     };
     dispatch(action);
 
     const action2 = {
-      type: 'ADVANCE_TURN',
-      newTurn: nextTurn
+      type: 'CHANGE_PHASE',
+      phase: 'options'
     };
     dispatch(action2);
 
     const action3 = {
-      type: 'CHANGE_PHASE',
-      phase: 'options'
-    };
-    dispatch(action3);
-    console.log(props.eventData[props.currentEvent]);
-    const action4 = {
       type: 'CHANGE_DIALOGUE',
       dialogue: props.eventData[props.currentEvent].eventInitialText
     };
-    dispatch(action4);
+    dispatch(action3);
   }
 
   return(
     <div>
-      <button onClick={() => {handleSelectNewEvent();}}>Continue</button>
+      <button onClick={() => {handleMoveToNextEvent();}}>Continue</button>
     </div>
   );
 }

@@ -14,7 +14,7 @@ const eventData = {
   },
   1000001 : {
     eventName: 'A Grassy Gnoll',
-    eventInitialText: 'A Gnoll, but it is covered in grass.',
+    eventInitialText: 'A Gnoll, but it is covered in grass. 1',
     optionOne: {
       buttonText: 'Sneak Past The Gnoll',
       eventType: 'sneak',
@@ -46,7 +46,7 @@ const eventData = {
   },
   1000002 : {
     eventName: 'A Grassy Knoll 2',
-    eventInitialText: 'A Gnoll, but it is covered in grass.',
+    eventInitialText: 'A Gnoll, but it is covered in grass. 2',
     optionOne: {
       buttonText: 'Sneak Past The Gnoll',
       eventType: 'sneak',
@@ -78,7 +78,7 @@ const eventData = {
   },
   1000003 : {
     eventName: 'A Grassy Knoll 3',
-    eventInitialText: 'A Gnoll, but it is covered in grass.',
+    eventInitialText: 'A Gnoll, but it is covered in grass. 3',
     optionOne: {
       buttonText: 'Sneak Past The Gnoll',
       eventType: 'sneak',
@@ -110,7 +110,7 @@ const eventData = {
   },
   1000004 : {
     eventName: 'A Grassy Knoll 4',
-    eventInitialText: 'A Gnoll, but it is covered in grass.',
+    eventInitialText: 'A Gnoll, but it is covered in grass. 4',
     optionOne: {
       buttonText: 'Sneak Past The Gnoll',
       eventType: 'sneak',
@@ -142,7 +142,7 @@ const eventData = {
   },
   1000005 : {
     eventName: 'A Grassy Knoll 5',
-    eventInitialText: 'A Gnoll, but it is covered in grass.',
+    eventInitialText: 'A Gnoll, but it is covered in grass. 5',
     optionOne: {
       buttonText: 'Sneak Past The Gnoll',
       eventType: 'sneak',
@@ -174,7 +174,7 @@ const eventData = {
   },
   1000006 : {
     eventName: 'A Grassy Knoll 6',
-    eventInitialText: 'A Gnoll, but it is covered in grass.',
+    eventInitialText: 'A Gnoll, but it is covered in grass. 6',
     optionOne: {
       buttonText: 'Sneak Past The Gnoll',
       eventType: 'sneak',
@@ -206,7 +206,7 @@ const eventData = {
   },
   1000007 : {
     eventName: 'A Grassy Knoll 7',
-    eventInitialText: 'A Gnoll, but it is covered in grass.',
+    eventInitialText: 'A Gnoll, but it is covered in grass. 7',
     optionOne: {
       buttonText: 'Sneak Past The Gnoll',
       eventType: 'sneak',
@@ -238,7 +238,7 @@ const eventData = {
   },
   1000008 : {
     eventName: 'A Grassy Knoll 8',
-    eventInitialText: 'A Gnoll, but it is covered in grass.',
+    eventInitialText: 'A Gnoll, but it is covered in grass. 8',
     optionOne: {
       buttonText: 'Sneak Past The Gnoll',
       eventType: 'sneak',
@@ -270,7 +270,7 @@ const eventData = {
   },
   1000009 : {
     eventName: 'A Grassy Knoll 9 ',
-    eventInitialText: 'A Gnoll, but it is covered in grass.',
+    eventInitialText: 'A Gnoll, but it is covered in grass. 9',
     optionOne: {
       buttonText: 'Sneak Past The Gnoll',
       eventType: 'sneak',
@@ -302,7 +302,7 @@ const eventData = {
   },
   10000010 : {
     eventName: 'A Grassy Knoll 10',
-    eventInitialText: 'A Gnoll, but it is covered in grass.',
+    eventInitialText: 'A Gnoll, but it is covered in grass. 10',
     optionOne: {
       buttonText: 'Sneak Past The Gnoll',
       eventType: 'sneak',

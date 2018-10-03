@@ -7,6 +7,9 @@ function OptionsUI(props)
 
   function handleOptionOne()
   {
+    let randomEvent = Math.floor(Math.random() * (11 - 1) + 1).toString();
+    let newEvent = (props.selectedCharacter.turnCounter + 1).toString() + '00000' + randomEvent;
+
     const { dispatch } = props;
     const action = {
       type: 'CHANGE_PHASE',
@@ -41,7 +44,11 @@ function OptionsUI(props)
         dispatch(action);
       }
     }
-
+    const finalAction = {
+      type: 'CHANGE_EVENT',
+      eventId: newEvent
+    };
+    dispatch(finalAction);
   }
 
   function handleOptionTwo()
