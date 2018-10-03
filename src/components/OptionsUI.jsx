@@ -4,7 +4,9 @@ import { connect } from 'react-redux';
 
 function OptionsUI(props)
 {
-
+  //
+  //Begining of Option One
+  //
   function handleOptionOne()
   {
     let randomEvent = Math.floor(Math.random() * (11 - 1) + 1).toString();
@@ -17,6 +19,8 @@ function OptionsUI(props)
     };
     dispatch(action);
 
+    //If Sneak
+    //////////
     if(props.eventData[props.currentEvent].optionOne.eventType === 'sneak')
     {
       if(props.selectedCharacter.sneaky < props.eventData[props.currentEvent].optionOne.skillTarget)
@@ -44,6 +48,8 @@ function OptionsUI(props)
         dispatch(action);
       }
     }
+    //If Cunning
+    ////////////
     else if(props.eventData[props.currentEvent].optionOne.eventType === 'cunning')
     {
       if(props.selectedCharacter.cunning < props.eventData[props.currentEvent].optionOne.skillTarget)
@@ -71,6 +77,8 @@ function OptionsUI(props)
         dispatch(action);
       }
     }
+    //If Dashing
+    ////////////
     else if(props.eventData[props.currentEvent].optionOne.eventType === 'dashing')
     {
       if(props.selectedCharacter.dashing < props.eventData[props.currentEvent].optionOne.skillTarget)
@@ -98,6 +106,8 @@ function OptionsUI(props)
         dispatch(action);
       }
     }
+    //If FIGHT
+    //////////
     else if(props.eventData[props.currentEvent].optionOne.eventType === 'fight')
     {
       const action = {
@@ -106,14 +116,17 @@ function OptionsUI(props)
       };
       dispatch(action);
     }
-
+    //New Event Chooser
+    ///////////////////
     const finalAction = {
       type: 'CHANGE_EVENT',
       eventId: newEvent
     };
     dispatch(finalAction);
   }
-
+  //
+  //Begining of Option Two
+  //
   function handleOptionTwo()
   {
     let randomEvent = Math.floor(Math.random() * (11 - 1) + 1).toString();
@@ -222,7 +235,9 @@ function OptionsUI(props)
     };
     dispatch(finalAction);
   }
-
+  //
+  //Begining of Option Three
+  //
   function handleOptionThree()
   {
     let randomEvent = Math.floor(Math.random() * (11 - 1) + 1).toString();

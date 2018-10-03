@@ -13,6 +13,30 @@ export default (state = {}, action) => {
     });
     return newState;
 
+  case 'UPDATE_SNEAK':
+    newState = Object.assign({}, state, {
+      sneaky: action.newSneaky
+    });
+    return newState;
+
+  case 'UPDATE_CUNNING':
+    newState = Object.assign({}, state, {
+      cunning: action.newCunning
+    });
+    return newState;
+
+  case 'UPDATE_DASHING':
+    newState = Object.assign({}, state, {
+      dashing: action.newDashing
+    });
+    return newState;
+
+  case 'UPDATE_HP':
+    newState = Object.assign({}, state, {
+      hp: action.newHP
+    });
+    return newState;
+
   default:
     return state;
   }
