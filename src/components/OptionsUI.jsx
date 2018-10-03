@@ -98,6 +98,14 @@ function OptionsUI(props)
         dispatch(action);
       }
     }
+    else if(props.eventData[props.currentEvent].optionOne.eventType === 'fight')
+    {
+      const action = {
+        type: 'CHANGE_DIALOGUE',
+        dialogue: props.eventData[props.currentEvent].optionOne.missText
+      };
+      dispatch(action);
+    }
 
     const finalAction = {
       type: 'CHANGE_EVENT',
@@ -199,6 +207,14 @@ function OptionsUI(props)
         dispatch(action);
       }
     }
+    else if(props.eventData[props.currentEvent].optionTwo.eventType === 'fight')
+    {
+      const action = {
+        type: 'CHANGE_DIALOGUE',
+        dialogue: props.eventData[props.currentEvent].optionTwo.missText
+      };
+      dispatch(action);
+    }
 
     const finalAction = {
       type: 'CHANGE_EVENT',
@@ -299,6 +315,14 @@ function OptionsUI(props)
         };
         dispatch(action);
       }
+    }
+    else if(props.eventData[props.currentEvent].optionThree.eventType === 'fight')
+    {
+      const action = {
+        type: 'CHANGE_DIALOGUE',
+        dialogue: props.eventData[props.currentEvent].optionThree.missText
+      };
+      dispatch(action);
     }
 
     const finalAction = {
