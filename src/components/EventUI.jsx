@@ -14,7 +14,8 @@ function EventUI(props)
       eventData={props.eventData}
       currentEvent={props.currentEvent}
       selectedCharacter={props.selectedCharacter}
-      gamePhase={props.gamePhase}/>;
+      gamePhase={props.gamePhase}
+      currentDialogue={props.currentDialogue}/>;
   }
   else
   {
@@ -28,7 +29,8 @@ function EventUI(props)
       eventData={props.eventData}
       currentEvent={props.currentEvent}
       selectedCharacter={props.selectedCharacter}
-      gamePhase={props.gamePhase}/>;
+      gamePhase={props.gamePhase}
+      currentDialogue={props.currentDialogue}/>;
   }
 
   return(
@@ -48,7 +50,6 @@ function EventUI(props)
         {optionsDiv}
       </div>
 
-
       <div>
         {continueDiv}
       </div>
@@ -60,7 +61,8 @@ EventUI.propTypes = {
   eventData: PropTypes.object,
   selectedCharacter: PropTypes. object,
   currentEvent: PropTypes.string,
-  gamePhase: PropTypes.string
+  gamePhase: PropTypes.string,
+  currentDialogue: PropTypes.string
 };
 
 export default connect()(EventUI);

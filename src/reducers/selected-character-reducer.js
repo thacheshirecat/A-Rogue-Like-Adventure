@@ -11,7 +11,6 @@ export default (state = {}, action) => {
     newState = Object.assign({}, state, {
       turnCounter: action.newTurn
     });
-    console.log(newState);
     return newState;
 
   default:

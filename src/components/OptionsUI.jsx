@@ -8,33 +8,62 @@ function OptionsUI(props)
   function handleOptionOne()
   {
     const { dispatch } = props;
-    const action3 = {
+    const action = {
       type: 'CHANGE_PHASE',
       phase: 'continue'
     };
-    dispatch(action3);
+    dispatch(action);
+
+    if(props.eventData[props.currentEvent].optionOne.eventType === 'sneak')
+    {
+      if(props.selectedCharacter.sneaky < props.eventData[props.currentEvent].optionOne.skillTarget)
+      {
+        const action = {
+          type: 'CHANGE_DIALOGUE',
+          dialogue: props.eventData[props.currentEvent].optionOne.missText
+        };
+        dispatch(action);
+      }
+      else if(props.selectedCharacter.sneaky === props.eventData[props.currentEvent].optionOne.skillTarget)
+      {
+        const action = {
+          type: 'CHANGE_DIALOGUE',
+          dialogue: props.eventData[props.currentEvent].optionOne.tieText
+        };
+        dispatch(action);
+      }
+      else
+      {
+        const action = {
+          type: 'CHANGE_DIALOGUE',
+          dialogue: props.eventData[props.currentEvent].optionOne.successText
+        };
+        dispatch(action);
+      }
+    }
+
   }
 
   function handleOptionTwo()
   {
     const { dispatch } = props;
-    const action3 = {
+    const action = {
       type: 'CHANGE_PHASE',
       phase: 'continue'
     };
-    dispatch(action3);
+    dispatch(action);
   }
 
   function handleOptionThree()
   {
     const { dispatch } = props;
-    const action3 = {
+    const action = {
       type: 'CHANGE_PHASE',
       phase: 'continue'
     };
-    dispatch(action3);
+    dispatch(action);
   }
-  
+
   return(
     <div>
       <button onClick={() => {handleOptionOne();}}>{props.eventData[props.currentEvent].optionOne.buttonText}</button>
@@ -51,7 +80,8 @@ OptionsUI.propTypes = {
   eventData: PropTypes.object,
   selectedCharacter: PropTypes. object,
   currentEvent: PropTypes.string,
-  gamePhase: PropTypes.string
+  gamePhase: PropTypes.string,
+  currentDialogue: PropTypes.string
 };
 
 export default connect()(OptionsUI);

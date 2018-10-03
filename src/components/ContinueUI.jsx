@@ -29,6 +29,12 @@ function ContinueUI(props)
       phase: 'options'
     };
     dispatch(action3);
+    console.log(props.eventData[props.currentEvent]);
+    const action4 = {
+      type: 'CHANGE_DIALOGUE',
+      dialogue: props.eventData[props.currentEvent].eventInitialText
+    };
+    dispatch(action4);
   }
 
   return(
@@ -42,7 +48,8 @@ ContinueUI.propTypes = {
   eventData: PropTypes.object,
   selectedCharacter: PropTypes. object,
   currentEvent: PropTypes.string,
-  gamePhase: PropTypes.string
+  gamePhase: PropTypes.string,
+  currentDialogue: PropTypes.string
 };
 
 export default connect()(ContinueUI);
