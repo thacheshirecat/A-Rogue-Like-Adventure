@@ -44,6 +44,61 @@ function OptionsUI(props)
         dispatch(action);
       }
     }
+    else if(props.eventData[props.currentEvent].optionOne.eventType === 'cunning')
+    {
+      if(props.selectedCharacter.cunning < props.eventData[props.currentEvent].optionOne.skillTarget)
+      {
+        const action = {
+          type: 'CHANGE_DIALOGUE',
+          dialogue: props.eventData[props.currentEvent].optionOne.missText
+        };
+        dispatch(action);
+      }
+      else if(props.selectedCharacter.cunning === props.eventData[props.currentEvent].optionOne.skillTarget)
+      {
+        const action = {
+          type: 'CHANGE_DIALOGUE',
+          dialogue: props.eventData[props.currentEvent].optionOne.tieText
+        };
+        dispatch(action);
+      }
+      else
+      {
+        const action = {
+          type: 'CHANGE_DIALOGUE',
+          dialogue: props.eventData[props.currentEvent].optionOne.successText
+        };
+        dispatch(action);
+      }
+    }
+    else if(props.eventData[props.currentEvent].optionOne.eventType === 'dashing')
+    {
+      if(props.selectedCharacter.dashing < props.eventData[props.currentEvent].optionOne.skillTarget)
+      {
+        const action = {
+          type: 'CHANGE_DIALOGUE',
+          dialogue: props.eventData[props.currentEvent].optionOne.missText
+        };
+        dispatch(action);
+      }
+      else if(props.selectedCharacter.dashing === props.eventData[props.currentEvent].optionOne.skillTarget)
+      {
+        const action = {
+          type: 'CHANGE_DIALOGUE',
+          dialogue: props.eventData[props.currentEvent].optionOne.tieText
+        };
+        dispatch(action);
+      }
+      else
+      {
+        const action = {
+          type: 'CHANGE_DIALOGUE',
+          dialogue: props.eventData[props.currentEvent].optionOne.successText
+        };
+        dispatch(action);
+      }
+    }
+
     const finalAction = {
       type: 'CHANGE_EVENT',
       eventId: newEvent
@@ -53,22 +108,204 @@ function OptionsUI(props)
 
   function handleOptionTwo()
   {
+    let randomEvent = Math.floor(Math.random() * (11 - 1) + 1).toString();
+    let newEvent = (props.selectedCharacter.turnCounter + 1).toString() + '00000' + randomEvent;
+
     const { dispatch } = props;
     const action = {
       type: 'CHANGE_PHASE',
       phase: 'continue'
     };
     dispatch(action);
+
+    if(props.eventData[props.currentEvent].optionTwo.eventType === 'sneak')
+    {
+      if(props.selectedCharacter.sneaky < props.eventData[props.currentEvent].optionTwo.skillTarget)
+      {
+        const action = {
+          type: 'CHANGE_DIALOGUE',
+          dialogue: props.eventData[props.currentEvent].optionTwo.missText
+        };
+        dispatch(action);
+      }
+      else if(props.selectedCharacter.sneaky === props.eventData[props.currentEvent].optionTwo.skillTarget)
+      {
+        const action = {
+          type: 'CHANGE_DIALOGUE',
+          dialogue: props.eventData[props.currentEvent].optionTwo.tieText
+        };
+        dispatch(action);
+      }
+      else
+      {
+        const action = {
+          type: 'CHANGE_DIALOGUE',
+          dialogue: props.eventData[props.currentEvent].optionTwo.successText
+        };
+        dispatch(action);
+      }
+    }
+    else if(props.eventData[props.currentEvent].optionTwo.eventType === 'cunning')
+    {
+      if(props.selectedCharacter.cunning < props.eventData[props.currentEvent].optionTwo.skillTarget)
+      {
+        const action = {
+          type: 'CHANGE_DIALOGUE',
+          dialogue: props.eventData[props.currentEvent].optionTwo.missText
+        };
+        dispatch(action);
+      }
+      else if(props.selectedCharacter.cunning === props.eventData[props.currentEvent].optionTwo.skillTarget)
+      {
+        const action = {
+          type: 'CHANGE_DIALOGUE',
+          dialogue: props.eventData[props.currentEvent].optionTwo.tieText
+        };
+        dispatch(action);
+      }
+      else
+      {
+        const action = {
+          type: 'CHANGE_DIALOGUE',
+          dialogue: props.eventData[props.currentEvent].optionTwo.successText
+        };
+        dispatch(action);
+      }
+    }
+    else if(props.eventData[props.currentEvent].optionTwo.eventType === 'dashing')
+    {
+      if(props.selectedCharacter.dashing < props.eventData[props.currentEvent].optionTwo.skillTarget)
+      {
+        const action = {
+          type: 'CHANGE_DIALOGUE',
+          dialogue: props.eventData[props.currentEvent].optionTwo.missText
+        };
+        dispatch(action);
+      }
+      else if(props.selectedCharacter.dashing === props.eventData[props.currentEvent].optionTwo.skillTarget)
+      {
+        const action = {
+          type: 'CHANGE_DIALOGUE',
+          dialogue: props.eventData[props.currentEvent].optionTwo.tieText
+        };
+        dispatch(action);
+      }
+      else
+      {
+        const action = {
+          type: 'CHANGE_DIALOGUE',
+          dialogue: props.eventData[props.currentEvent].optionTwo.successText
+        };
+        dispatch(action);
+      }
+    }
+
+    const finalAction = {
+      type: 'CHANGE_EVENT',
+      eventId: newEvent
+    };
+    dispatch(finalAction);
   }
 
   function handleOptionThree()
   {
+    let randomEvent = Math.floor(Math.random() * (11 - 1) + 1).toString();
+    let newEvent = (props.selectedCharacter.turnCounter + 1).toString() + '00000' + randomEvent;
+
     const { dispatch } = props;
     const action = {
       type: 'CHANGE_PHASE',
       phase: 'continue'
     };
     dispatch(action);
+
+    if(props.eventData[props.currentEvent].optionThree.eventType === 'sneak')
+    {
+      if(props.selectedCharacter.sneaky < props.eventData[props.currentEvent].optionThree.skillTarget)
+      {
+        const action = {
+          type: 'CHANGE_DIALOGUE',
+          dialogue: props.eventData[props.currentEvent].optionThree.missText
+        };
+        dispatch(action);
+      }
+      else if(props.selectedCharacter.sneaky === props.eventData[props.currentEvent].optionThree.skillTarget)
+      {
+        const action = {
+          type: 'CHANGE_DIALOGUE',
+          dialogue: props.eventData[props.currentEvent].optionThree.tieText
+        };
+        dispatch(action);
+      }
+      else
+      {
+        const action = {
+          type: 'CHANGE_DIALOGUE',
+          dialogue: props.eventData[props.currentEvent].optionThree.successText
+        };
+        dispatch(action);
+      }
+    }
+    else if(props.eventData[props.currentEvent].optionThree.eventType === 'cunning')
+    {
+      if(props.selectedCharacter.cunning < props.eventData[props.currentEvent].optionThree.skillTarget)
+      {
+        const action = {
+          type: 'CHANGE_DIALOGUE',
+          dialogue: props.eventData[props.currentEvent].optionThree.missText
+        };
+        dispatch(action);
+      }
+      else if(props.selectedCharacter.cunning === props.eventData[props.currentEvent].optionThree.skillTarget)
+      {
+        const action = {
+          type: 'CHANGE_DIALOGUE',
+          dialogue: props.eventData[props.currentEvent].optionThree.tieText
+        };
+        dispatch(action);
+      }
+      else
+      {
+        const action = {
+          type: 'CHANGE_DIALOGUE',
+          dialogue: props.eventData[props.currentEvent].optionThree.successText
+        };
+        dispatch(action);
+      }
+    }
+    else if(props.eventData[props.currentEvent].optionThree.eventType === 'dashing')
+    {
+      if(props.selectedCharacter.dashing < props.eventData[props.currentEvent].optionThree.skillTarget)
+      {
+        const action = {
+          type: 'CHANGE_DIALOGUE',
+          dialogue: props.eventData[props.currentEvent].optionThree.missText
+        };
+        dispatch(action);
+      }
+      else if(props.selectedCharacter.dashing === props.eventData[props.currentEvent].optionThree.skillTarget)
+      {
+        const action = {
+          type: 'CHANGE_DIALOGUE',
+          dialogue: props.eventData[props.currentEvent].optionThree.tieText
+        };
+        dispatch(action);
+      }
+      else
+      {
+        const action = {
+          type: 'CHANGE_DIALOGUE',
+          dialogue: props.eventData[props.currentEvent].optionThree.successText
+        };
+        dispatch(action);
+      }
+    }
+
+    const finalAction = {
+      type: 'CHANGE_EVENT',
+      eventId: newEvent
+    };
+    dispatch(finalAction);
   }
 
   return(

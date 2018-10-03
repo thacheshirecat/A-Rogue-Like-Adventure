@@ -37,6 +37,7 @@ function GameState(props)
       <div className='footer'>
         <h4>{props.selectedCharacter.name}</h4>
         <h4>HP: {props.selectedCharacter.hp}</h4>
+        <h4>Sneaky: {props.selectedCharacter.sneaky} | Cunning: {props.selectedCharacter.cunning} | Dashing: {props.selectedCharacter.dashing}</h4>
       </div>
     </div>
   );
