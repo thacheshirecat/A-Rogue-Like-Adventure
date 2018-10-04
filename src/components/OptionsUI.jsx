@@ -197,7 +197,7 @@ function OptionsUI(props)
         dispatch(action);
 
         const action2 = {
-          type: 'UPDATE_CUNNING',
+          type: 'UPDATE_DASHING',
           newDashing: newDashing
         };
         dispatch(action2);
@@ -304,11 +304,23 @@ function OptionsUI(props)
 
     //New Event Chooser
     ///////////////////
-    const finalAction = {
-      type: 'CHANGE_EVENT',
-      eventId: newEvent
-    };
-    dispatch(finalAction);
+    if(props.selectedCharacter.hp > 0)
+    {
+      const action = {
+        type: 'CHANGE_EVENT',
+        eventId: newEvent
+      };
+      dispatch(action);
+    }
+    else
+    {
+      const action = {
+        type: 'CHANGE_EVENT',
+        eventId: 'gameover'
+      };
+      dispatch(action);
+    }
+
   }
   //
   //Begining of Option Two
@@ -503,7 +515,7 @@ function OptionsUI(props)
         dispatch(action);
 
         const action2 = {
-          type: 'UPDATE_CUNNING',
+          type: 'UPDATE_DASHING',
           newDashing: newDashing
         };
         dispatch(action2);
@@ -809,7 +821,7 @@ function OptionsUI(props)
         dispatch(action);
 
         const action2 = {
-          type: 'UPDATE_CUNNING',
+          type: 'UPDATE_DASHING',
           newDashing: newDashing
         };
         dispatch(action2);
