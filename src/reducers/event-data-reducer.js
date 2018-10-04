@@ -3,13 +3,22 @@ const eventData = {
     eventName: 'Begin Again',
     eventInitialText: 'Welcome to your adventure.',
     optionOne: {
-      buttonText: 'Head West'
+      buttonText: 'Head West',
+      eventType: 'healing',
+      healthText: 'You strike out Westward as you begin your journey...',
+      healing: 0
     },
     optionTwo: {
-      buttonText: 'Head East'
+      buttonText: 'Head East',
+      eventType: 'healing',
+      healthText: 'You head confidently Eastward as you begin your journey...',
+      healing: 0
     },
     optionThree: {
-      buttonText: 'Head North'
+      buttonText: 'Head North',
+      eventType: 'healing',
+      healthText: 'North? Really? Okay, well good luck on your journey...',
+      healing: 0
     }
   },
   gameover : {

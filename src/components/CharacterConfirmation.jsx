@@ -31,6 +31,12 @@ function CharacterConfirmation(props)
       dialogue: props.eventData[props.currentEvent].eventInitialText
     };
     dispatch(action2);
+
+    const action3 = {
+      type: 'CHANGE_TITLE',
+      currentTitle: props.eventData[props.currentEvent].eventName
+    };
+    dispatch(action3);
   }
 
   return(
@@ -68,6 +74,7 @@ CharacterConfirmation.propTypes = {
   selectedCharacter: PropTypes.object,
   currentEvent: PropTypes.string,
   gamePhase: PropTypes.string,
+  currentDialogue: PropTypes.object,
   dispatch: PropTypes.func
 };
 

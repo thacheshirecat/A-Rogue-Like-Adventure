@@ -40,9 +40,9 @@ function EventUI(props)
           text-align: center;
         }
       `}</style>
-      <h3>{props.eventData[props.currentEvent].eventName}</h3>
+    <h3>{props.currentDialogue.currentTitle}</h3>
       <div className='card'>
-        <p>{props.currentDialogue}</p>
+        <p>{props.currentDialogue.currentDialogue}</p>
       </div>
       <br/>
 
@@ -62,7 +62,7 @@ EventUI.propTypes = {
   selectedCharacter: PropTypes. object,
   currentEvent: PropTypes.string,
   gamePhase: PropTypes.string,
-  currentDialogue: PropTypes.string
+  currentDialogue: PropTypes.object
 };
 
 export default connect()(EventUI);

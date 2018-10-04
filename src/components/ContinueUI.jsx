@@ -29,6 +29,12 @@ function ContinueUI(props)
         dialogue: props.eventData[props.currentEvent].eventInitialText
       };
       dispatch(action3);
+
+      const action4 = {
+        type: 'CHANGE_TITLE',
+        currentTitle: props.eventData[props.currentEvent].eventName
+      };
+      dispatch(action4);
     }
     else if(props.selectedCharacter.hp > 0 && props.selectedCharacter.turnCounter >= 10)
     {
@@ -60,7 +66,7 @@ ContinueUI.propTypes = {
   selectedCharacter: PropTypes. object,
   currentEvent: PropTypes.string,
   gamePhase: PropTypes.string,
-  currentDialogue: PropTypes.string,
+  currentDialogue: PropTypes.object,
   dispatch: PropTypes.func
 };
 

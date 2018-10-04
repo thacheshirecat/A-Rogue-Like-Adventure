@@ -79,8 +79,8 @@ SelectCharacter.propTypes = {
   selectedCharacter: PropTypes.object.isRequired,
   currentEvent: PropTypes.string,
   gamePhase: PropTypes.string,
-  currentDialogue: PropTypes.string,
-  dispatch: PropTypes.func,  
+  currentDialogue: PropTypes.object,
+  dispatch: PropTypes.func,
 };
 
 export default connect()(SelectCharacter);

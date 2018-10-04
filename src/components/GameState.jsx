@@ -68,7 +68,7 @@ GameState.propTypes = {
   selectedCharacter: PropTypes. object,
   currentEvent: PropTypes.string,
   gamePhase: PropTypes.string,
-  currentDialogue: PropTypes.string
+  currentDialogue: PropTypes.object
 };
 
 export default connect()(GameState);

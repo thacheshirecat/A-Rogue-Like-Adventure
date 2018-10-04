@@ -293,7 +293,7 @@ function OptionsUI(props)
 
       const action = {
         type: 'CHANGE_DIALOGUE',
-        dialogue: props.eventData[props.currentEvent].optionOne.missText
+        dialogue: props.eventData[props.currentEvent].optionOne.healthText
       };
       dispatch(action);
 
@@ -605,7 +605,7 @@ function OptionsUI(props)
 
       const action = {
         type: 'CHANGE_DIALOGUE',
-        dialogue: props.eventData[props.currentEvent].optionTwo.missText
+        dialogue: props.eventData[props.currentEvent].optionTwo.healthText
       };
       dispatch(action);
 
@@ -916,7 +916,7 @@ function OptionsUI(props)
 
       const action = {
         type: 'CHANGE_DIALOGUE',
-        dialogue: props.eventData[props.currentEvent].optionThree.missText
+        dialogue: props.eventData[props.currentEvent].optionThree.healthText
       };
       dispatch(action);
 
@@ -956,7 +956,7 @@ OptionsUI.propTypes = {
   selectedCharacter: PropTypes. object,
   currentEvent: PropTypes.string,
   gamePhase: PropTypes.string,
-  currentDialogue: PropTypes.string,
+  currentDialogue: PropTypes.object,
   dispatch: PropTypes.func
 };
 
