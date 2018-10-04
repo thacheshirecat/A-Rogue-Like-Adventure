@@ -30,7 +30,7 @@ function ContinueUI(props)
       };
       dispatch(action3);
     }
-    else if(props.selectedCharacter.turnCounter >= 10)
+    else if(props.selectedCharacter.hp > 0 && props.selectedCharacter.turnCounter >= 10)
     {
       const action = {
         type: 'CHANGE_PHASE',

@@ -6,7 +6,7 @@ import { connect } from 'react-redux';
 function CharacterConfirmation(props)
 {
   let deselectedCharacter = {};
-  console.log(props.eventData[props.currentEvent]);
+
   function handleDeselectingCharacter(deselectedCharacter)
   {
     const { dispatch } = props;
