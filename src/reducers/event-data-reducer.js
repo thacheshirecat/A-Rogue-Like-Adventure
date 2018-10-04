@@ -95,7 +95,7 @@ const eventData = {
     }
   },
   1000003 : {
-    eventName: 'A Normal Event',
+    eventName: 'A Witch',
     eventInitialText: 'You encounter something that needs to get done.',
     optionOne: {
       buttonText: 'Be sneaky',
@@ -132,7 +132,7 @@ const eventData = {
     }
   },
   1000004 : {
-    eventName: 'A Normal Event',
+    eventName: 'A Travelling Merchant',
     eventInitialText: 'You encounter something that needs to get done.',
     optionOne: {
       buttonText: 'Be sneaky',
@@ -169,7 +169,7 @@ const eventData = {
     }
   },
   1000005 : {
-    eventName: 'A Normal Event',
+    eventName: 'A Beseiged Town',
     eventInitialText: 'You encounter something that needs to get done.',
     optionOne: {
       buttonText: 'Be sneaky',
@@ -206,7 +206,7 @@ const eventData = {
     }
   },
   1000006 : {
-    eventName: 'A Normal Event',
+    eventName: 'A Ghost in the Woods',
     eventInitialText: 'You encounter something that needs to get done.',
     optionOne: {
       buttonText: 'Be sneaky',
@@ -243,7 +243,7 @@ const eventData = {
     }
   },
   1000007 : {
-    eventName: 'A Normal Event',
+    eventName: 'A Peaceful Cottage',
     eventInitialText: 'You encounter something that needs to get done.',
     optionOne: {
       buttonText: 'Be sneaky',
@@ -280,7 +280,7 @@ const eventData = {
     }
   },
   1000008 : {
-    eventName: 'A Normal Event',
+    eventName: 'A Shepherd',
     eventInitialText: 'You encounter something that needs to get done.',
     optionOne: {
       buttonText: 'Be sneaky',
@@ -317,7 +317,7 @@ const eventData = {
     }
   },
   1000009 : {
-    eventName: 'A Normal Event',
+    eventName: 'A Guarded Town',
     eventInitialText: 'You encounter something that needs to get done.',
     optionOne: {
       buttonText: 'Be sneaky',
@@ -354,7 +354,7 @@ const eventData = {
     }
   },
   10000010 : {
-    eventName: 'A Normal Event',
+    eventName: 'A Drowning Fisherman',
     eventInitialText: 'You encounter something that needs to get done.',
     optionOne: {
       buttonText: 'Be sneaky',
@@ -391,7 +391,7 @@ const eventData = {
     }
   },
   2000001 : {
-    eventName: 'A Normal Event',
+    eventName: 'A Dark Cave',
     eventInitialText: 'You encounter something that needs to get done.',
     optionOne: {
       buttonText: 'Be sneaky',
@@ -428,7 +428,7 @@ const eventData = {
     }
   },
   2000002 : {
-    eventName: 'A Normal Event',
+    eventName: 'A Foreboding Sign',
     eventInitialText: 'You encounter something that needs to get done.',
     optionOne: {
       buttonText: 'Be sneaky',
@@ -465,7 +465,7 @@ const eventData = {
     }
   },
   2000003 : {
-    eventName: 'A Normal Event',
+    eventName: 'An Abandoned Castle',
     eventInitialText: 'You encounter something that needs to get done.',
     optionOne: {
       buttonText: 'Be sneaky',
@@ -502,7 +502,7 @@ const eventData = {
     }
   },
   2000004 : {
-    eventName: 'A Normal Event',
+    eventName: 'Two Talking Squirrels',
     eventInitialText: 'You encounter something that needs to get done.',
     optionOne: {
       buttonText: 'Be sneaky',
@@ -539,7 +539,7 @@ const eventData = {
     }
   },
   2000005 : {
-    eventName: 'An Dangerous Event',
+    eventName: 'A Guarded Bridge',
     eventInitialText: 'You encounter something dangerous that needs to be avoided.',
     optionOne: {
       buttonText: 'Fight',
@@ -571,7 +571,7 @@ const eventData = {
     }
   },
   2000006 : {
-    eventName: 'An Dangerous Event',
+    eventName: 'Bandits!',
     eventInitialText: 'You encounter something dangerous that needs to be avoided.',
     optionOne: {
       buttonText: 'Fight',
@@ -603,7 +603,7 @@ const eventData = {
     }
   },
   2000007 : {
-    eventName: 'An Dangerous Event',
+    eventName: 'Orcs!',
     eventInitialText: 'You encounter something dangerous that needs to be avoided.',
     optionOne: {
       buttonText: 'Fight',
@@ -635,7 +635,7 @@ const eventData = {
     }
   },
   2000008 : {
-    eventName: 'Another Dangerous Event',
+    eventName: 'Knights on the Road',
     eventInitialText: 'You encounter something dangerous that needs to be avoided.',
     optionOne: {
       buttonText: 'Fight',
@@ -667,7 +667,7 @@ const eventData = {
     }
   },
   2000009 : {
-    eventName: 'Another Dangerous Event',
+    eventName: 'Ogre!',
     eventInitialText: 'You encounter something dangerous that needs to be avoided.',
     optionOne: {
       buttonText: 'Fight',
@@ -699,7 +699,7 @@ const eventData = {
     }
   },
   20000010 : {
-    eventName: 'Another Dangerous Event',
+    eventName: 'Troll!',
     eventInitialText: 'You encounter something dangerous that needs to be avoided.',
     optionOne: {
       buttonText: 'Fight',
