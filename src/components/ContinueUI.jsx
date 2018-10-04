@@ -10,7 +10,7 @@ function ContinueUI(props)
     let nextTurn = (props.selectedCharacter.turnCounter) + 1;
     const { dispatch } = props;
 
-    if(props.selectedCharacter.hp > 0)
+    if(props.selectedCharacter.hp > 0 && props.selectedCharacter.turnCounter < 10)
     {
       const action = {
         type: 'ADVANCE_TURN',
@@ -30,6 +30,14 @@ function ContinueUI(props)
       };
       dispatch(action3);
     }
+    else if(props.selectedCharacter.turnCounter >= 10)
+    {
+      const action = {
+        type: 'CHANGE_PHASE',
+        phase: 'victory'
+      };
+      dispatch(action);
+    }
     else
     {
       const action = {
@@ -38,8 +46,6 @@ function ContinueUI(props)
       };
       dispatch(action);
     }
-
-
   }
 
   return(

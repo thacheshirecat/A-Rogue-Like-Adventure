@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 
 import EventUI from './EventUI';
 import GameOver from './GameOver';
+import Victory from './Victory';
 
 function GameState(props)
 {
@@ -18,6 +19,10 @@ function GameState(props)
   if(props.gamePhase === 'gameover')
   {
     eventUI = <GameOver/>;
+  }
+  else if(props.gamePhase === 'victory')
+  {
+    eventUI = <Victory/>;
   }
   else
   {

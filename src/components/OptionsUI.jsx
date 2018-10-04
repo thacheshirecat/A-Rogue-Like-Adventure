@@ -306,11 +306,14 @@ function OptionsUI(props)
 
     //New Event Chooser
     ///////////////////
-    const finalAction = {
-      type: 'CHANGE_EVENT',
-      eventId: newEvent
-    };
-    dispatch(finalAction);
+    if(props.selectedCharacter.turnCounter < 10)
+    {
+      const finalAction = {
+        type: 'CHANGE_EVENT',
+        eventId: newEvent
+      };
+      dispatch(finalAction);
+    }
 
   }
   //
@@ -615,11 +618,14 @@ function OptionsUI(props)
 
     //New Event Chooser
     ///////////////////
-    const finalAction = {
-      type: 'CHANGE_EVENT',
-      eventId: newEvent
-    };
-    dispatch(finalAction);
+    if(props.selectedCharacter.turnCounter < 10)
+    {
+      const finalAction = {
+        type: 'CHANGE_EVENT',
+        eventId: newEvent
+      };
+      dispatch(finalAction);
+    }
   }
   //
   //Begining of Option Three
@@ -923,11 +929,14 @@ function OptionsUI(props)
 
     //New Event Chooser
     ///////////////////
-    const finalAction = {
-      type: 'CHANGE_EVENT',
-      eventId: newEvent
-    };
-    dispatch(finalAction);
+    if(props.selectedCharacter.turnCounter < 10)
+    {
+      const finalAction = {
+        type: 'CHANGE_EVENT',
+        eventId: newEvent
+      };
+      dispatch(finalAction);
+    }
   }
 
   return(
