@@ -14,7 +14,7 @@ const eventData = {
   },
   1000001 : {
     eventName: 'A Grassy Gnoll',
-    eventInitialText: 'A Gnoll, but it is covered in grass. 1',
+    eventInitialText: 'A Gnoll, but it is covered in grass.',
     optionOne: {
       buttonText: 'Sneak Past The Gnoll',
       eventType: 'sneak',
@@ -82,404 +82,1319 @@ const eventData = {
     }
   },
   1000003 : {
-    eventName: 'Farm House 2',
-    eventInitialText: 'The smell of freshly baked bread catches your attention, and you are mighty hungry. You are going to need to eat in order to continue your journey, but there are some vicous looking dogs in the yard, so you decide to...',
+    eventName: 'A Normal Event',
+    eventInitialText: 'You encounter something that needs to get done.',
     optionOne: {
-      buttonText: 'Sneak up to the farm house and attempt to steal the loaf of bread you see cooling on the window',
+      buttonText: 'Be sneaky',
       eventType: 'sneak',
       skillTarget: 2,
-      missText: 'The yard dogs picked up on your scent right away! As you try and fend them off, the farmer comes out with his pitchfork. You take two damage, but you learn something about being sneaky around dogs (+1 sneaky)',
+      missText: 'You do not do well: take 2 damage gain 1 sneaky',
       missDamage: 2,
-      tieText: 'You manage to get to the window and the secure the bread, however this draws the attention of the yard dogs. You manage to get away before the farmer notices, but take one damage from the dogs as you flee. You learn something about being a better sneaker (+1 sneaky)',
+      tieText: 'You do Okay: take 1 damage, gain 1 sneaky',
       tieDamage: 1,
-      successText: 'The bread is yours, the yard dogs and farmer are none the wiser, and learn something about being sneaky in the process (+1 sneaky)',
+      successText: 'You do great: take no damage, gain 1 sneaky',
       healing: 0
     },
     optionTwo: {
-      buttonText: 'Create a distraction in the yard to give you a chance to steal the bread cooling in the window',
+      buttonText: 'Use your wit and guile',
       eventType: 'cunning',
       skillTarget: 2,
-      missText: 'You try to draw the dogs attention away with a distraction, but they arent having it. You take two damage as the dogs come straight for you, but you learn a little something about distractions (+1 cunning)',
+      missText: 'You do not do well: take 2 damage gain 1 cunning',
       missDamage: 2,
-      tieText: 'You let a nearby woodland creature loose in the yard, causing the dogs to take chase. You secure the bread, however the comotion roused the farmer and now he is after you. Take one damage fleeing, but you learn something about distractions (+1 cunning)',
+      tieText: 'You do Okay: take 1 damage, gain 1 cunning',
       tieDamage: 1,
-      successText: 'Fire! While unethical, it sure is a great way to get the whole farms attention. You set a haystack on fire, the dogs go nuts, the farmer rushes out to put it out and you make off with the bread. You learn something about how distractions should work (+1 cunning)',
+      successText: 'You do great: take no damage, gain 1 cunning',
       healing: 0
     },
     optionThree: {
-      buttonText: 'Try and reason with the farmers, surely they will see the nobility in aiding your quest',
+      buttonText: 'Be a dashing rogue and try and talk your way through it',
       eventType: 'dashing',
       skillTarget: 2,
-      missText: 'After giving it your best shot the farmer is looking at you with two heads. You take two points of damage, one from the embaressment, the other from your continued hunger. This serves as a lesson on what and what not to say (+1 dashing)',
+      missText: 'You do not do well: take 2 damage gain 1 dashing',
       missDamage: 2,
-      tieText: 'You explain the nobility of your quest, and your need for provisions. Your wallet, and by extension you, take one point of damage in order to secure the bread, but you learn something about negotiations in the process (+1 dashing)',
+      tieText: 'You do Okay: take 1 damage, gain 1 dashing',
       tieDamage: 1,
-      successText: 'The farmer is moved by your words, and by the clear nobility of your quest. He gives you the bread, and some directions. You learn more about persuation in the process (+1 dashing)',
+      successText: 'You do great: take no damage, gain 1 dashing',
       healing: 0
     }
   },
   1000004 : {
-    eventName: 'Farm House 3',
-    eventInitialText: 'The smell of freshly baked bread catches your attention, and you are mighty hungry. You are going to need to eat in order to continue your journey, but there are some vicous looking dogs in the yard, so you decide to...',
+    eventName: 'A Normal Event',
+    eventInitialText: 'You encounter something that needs to get done.',
     optionOne: {
-      buttonText: 'Sneak up to the farm house and attempt to steal the loaf of bread you see cooling on the window',
+      buttonText: 'Be sneaky',
       eventType: 'sneak',
       skillTarget: 2,
-      missText: 'The yard dogs picked up on your scent right away! As you try and fend them off, the farmer comes out with his pitchfork. You take two damage, but you learn something about being sneaky around dogs (+1 sneaky)',
+      missText: 'You do not do well: take 2 damage gain 1 sneaky',
       missDamage: 2,
-      tieText: 'You manage to get to the window and the secure the bread, however this draws the attention of the yard dogs. You manage to get away before the farmer notices, but take one damage from the dogs as you flee. You learn something about being a better sneaker (+1 sneaky)',
+      tieText: 'You do Okay: take 1 damage, gain 1 sneaky',
       tieDamage: 1,
-      successText: 'The bread is yours, the yard dogs and farmer are none the wiser, and learn something about being sneaky in the process (+1 sneaky)',
+      successText: 'You do great: take no damage, gain 1 sneaky',
       healing: 0
     },
     optionTwo: {
-      buttonText: 'Create a distraction in the yard to give you a chance to steal the bread cooling in the window',
+      buttonText: 'Use your wit and guile',
       eventType: 'cunning',
       skillTarget: 2,
-      missText: 'You try to draw the dogs attention away with a distraction, but they arent having it. You take two damage as the dogs come straight for you, but you learn a little something about distractions (+1 cunning)',
+      missText: 'You do not do well: take 2 damage gain 1 cunning',
       missDamage: 2,
-      tieText: 'You let a nearby woodland creature loose in the yard, causing the dogs to take chase. You secure the bread, however the comotion roused the farmer and now he is after you. Take one damage fleeing, but you learn something about distractions (+1 cunning)',
+      tieText: 'You do Okay: take 1 damage, gain 1 cunning',
       tieDamage: 1,
-      successText: 'Fire! While unethical, it sure is a great way to get the whole farms attention. You set a haystack on fire, the dogs go nuts, the farmer rushes out to put it out and you make off with the bread. You learn something about how distractions should work (+1 cunning)',
+      successText: 'You do great: take no damage, gain 1 cunning',
       healing: 0
     },
     optionThree: {
-      buttonText: 'Try and reason with the farmers, surely they will see the nobility in aiding your quest',
+      buttonText: 'Be a dashing rogue and try and talk your way through it',
       eventType: 'dashing',
       skillTarget: 2,
-      missText: 'After giving it your best shot the farmer is looking at you with two heads. You take two points of damage, one from the embaressment, the other from your continued hunger. This serves as a lesson on what and what not to say (+1 dashing)',
+      missText: 'You do not do well: take 2 damage gain 1 dashing',
       missDamage: 2,
-      tieText: 'You explain the nobility of your quest, and your need for provisions. Your wallet, and by extension you, take one point of damage in order to secure the bread, but you learn something about negotiations in the process (+1 dashing)',
+      tieText: 'You do Okay: take 1 damage, gain 1 dashing',
       tieDamage: 1,
-      successText: 'The farmer is moved by your words, and by the clear nobility of your quest. He gives you the bread, and some directions. You learn more about persuation in the process (+1 dashing)',
+      successText: 'You do great: take no damage, gain 1 dashing',
       healing: 0
     }
   },
   1000005 : {
-    eventName: 'Farm House 4',
-    eventInitialText: 'The smell of freshly baked bread catches your attention, and you are mighty hungry. You are going to need to eat in order to continue your journey, but there are some vicous looking dogs in the yard, so you decide to...',
+    eventName: 'A Normal Event',
+    eventInitialText: 'You encounter something that needs to get done.',
     optionOne: {
-      buttonText: 'Sneak up to the farm house and attempt to steal the loaf of bread you see cooling on the window',
+      buttonText: 'Be sneaky',
       eventType: 'sneak',
       skillTarget: 2,
-      missText: 'The yard dogs picked up on your scent right away! As you try and fend them off, the farmer comes out with his pitchfork. You take two damage, but you learn something about being sneaky around dogs (+1 sneaky)',
+      missText: 'You do not do well: take 2 damage gain 1 sneaky',
       missDamage: 2,
-      tieText: 'You manage to get to the window and the secure the bread, however this draws the attention of the yard dogs. You manage to get away before the farmer notices, but take one damage from the dogs as you flee. You learn something about being a better sneaker (+1 sneaky)',
+      tieText: 'You do Okay: take 1 damage, gain 1 sneaky',
       tieDamage: 1,
-      successText: 'The bread is yours, the yard dogs and farmer are none the wiser, and learn something about being sneaky in the process (+1 sneaky)',
+      successText: 'You do great: take no damage, gain 1 sneaky',
       healing: 0
     },
     optionTwo: {
-      buttonText: 'Create a distraction in the yard to give you a chance to steal the bread cooling in the window',
+      buttonText: 'Use your wit and guile',
       eventType: 'cunning',
       skillTarget: 2,
-      missText: 'You try to draw the dogs attention away with a distraction, but they arent having it. You take two damage as the dogs come straight for you, but you learn a little something about distractions (+1 cunning)',
+      missText: 'You do not do well: take 2 damage gain 1 cunning',
       missDamage: 2,
-      tieText: 'You let a nearby woodland creature loose in the yard, causing the dogs to take chase. You secure the bread, however the comotion roused the farmer and now he is after you. Take one damage fleeing, but you learn something about distractions (+1 cunning)',
+      tieText: 'You do Okay: take 1 damage, gain 1 cunning',
       tieDamage: 1,
-      successText: 'Fire! While unethical, it sure is a great way to get the whole farms attention. You set a haystack on fire, the dogs go nuts, the farmer rushes out to put it out and you make off with the bread. You learn something about how distractions should work (+1 cunning)',
+      successText: 'You do great: take no damage, gain 1 cunning',
       healing: 0
     },
     optionThree: {
-      buttonText: 'Try and reason with the farmers, surely they will see the nobility in aiding your quest',
+      buttonText: 'Be a dashing rogue and try and talk your way through it',
       eventType: 'dashing',
       skillTarget: 2,
-      missText: 'After giving it your best shot the farmer is looking at you with two heads. You take two points of damage, one from the embaressment, the other from your continued hunger. This serves as a lesson on what and what not to say (+1 dashing)',
+      missText: 'You do not do well: take 2 damage gain 1 dashing',
       missDamage: 2,
-      tieText: 'You explain the nobility of your quest, and your need for provisions. Your wallet, and by extension you, take one point of damage in order to secure the bread, but you learn something about negotiations in the process (+1 dashing)',
+      tieText: 'You do Okay: take 1 damage, gain 1 dashing',
       tieDamage: 1,
-      successText: 'The farmer is moved by your words, and by the clear nobility of your quest. He gives you the bread, and some directions. You learn more about persuation in the process (+1 dashing)',
+      successText: 'You do great: take no damage, gain 1 dashing',
       healing: 0
     }
   },
   1000006 : {
-    eventName: 'A Grassy Knoll 6',
-    eventInitialText: 'A Gnoll, but it is covered in grass. 6',
+    eventName: 'A Normal Event',
+    eventInitialText: 'You encounter something that needs to get done.',
     optionOne: {
-      buttonText: 'Sneak Past The Gnoll',
+      buttonText: 'Be sneaky',
       eventType: 'sneak',
       skillTarget: 2,
-      missText: 'It spotted you! You take two points of damage in the ensuing tussel, but you learn a little something about being sneaky (+1 sneaky)',
+      missText: 'You do not do well: take 2 damage gain 1 sneaky',
       missDamage: 2,
-      tieText: 'You take your time, and almost make it by, but the roar the Gnoll lets loose when it finally does see you actually, physically harms you for one point of damage. You learn something about being a better sneaker (+1 sneaky)',
+      tieText: 'You do Okay: take 1 damage, gain 1 sneaky',
       tieDamage: 1,
-      successText: 'That lump of grass is no wiser, and neither is the Gnoll. You sneak past with no problem, and learn something about being sneaky in the process (+1 sneaky)',
+      successText: 'You do great: take no damage, gain 1 sneaky',
       healing: 0
     },
     optionTwo: {
-      buttonText: 'Punch The Gnoll',
-      eventType: 'fight',
-      missText: 'That was not very smart. The Gnoll smacks you away as you advance, causing 2 points of damage. At least you are past the Grassy Gnoll, right?',
-      missDamage: 2
-    },
-    optionThree: {
-      buttonText: 'Try and Distract The Gnoll',
+      buttonText: 'Use your wit and guile',
       eventType: 'cunning',
       skillTarget: 2,
-      missText: 'You throw a stone to try and distract the Gnoll, but end up hitting it in the face. Unhappy Gnoll makes for a damaged Rogue, take two points of damage, however you do learn something about how distractions should work (+1 cunning)',
+      missText: 'You do not do well: take 2 damage gain 1 cunning',
       missDamage: 2,
-      tieText: 'You carefully aim and throw a rock beyond the Gnoll to try and draw its attention away. The Gnoll, surprised by the rock is momentarily shocked, but not long enough for you to get by without being swatted at. Take one point of damage, and learn something about how distractions work (+1 cunning)',
+      tieText: 'You do Okay: take 1 damage, gain 1 cunning',
       tieDamage: 1,
-      successText: 'After evaluating your surroundings you decide to throw a rock at a large tree near the Gnoll. The rock hitting the tree causes a loud bang, and several fruits drop from the tree taking the Gnoll by complete surprise. You make it past unscathed, and learn a little something about effective distractions (+1 cunning)',
+      successText: 'You do great: take no damage, gain 1 cunning',
+      healing: 0
+    },
+    optionThree: {
+      buttonText: 'Be a dashing rogue and try and talk your way through it',
+      eventType: 'dashing',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 dashing',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 dashing',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 dashing',
       healing: 0
     }
   },
   1000007 : {
-    eventName: 'A Grassy Knoll 7',
-    eventInitialText: 'A Gnoll, but it is covered in grass. 7',
+    eventName: 'A Normal Event',
+    eventInitialText: 'You encounter something that needs to get done.',
     optionOne: {
-      buttonText: 'Sneak Past The Gnoll',
+      buttonText: 'Be sneaky',
       eventType: 'sneak',
       skillTarget: 2,
-      missText: 'It spotted you! You take two points of damage in the ensuing tussel, but you learn a little something about being sneaky (+1 sneaky)',
+      missText: 'You do not do well: take 2 damage gain 1 sneaky',
       missDamage: 2,
-      tieText: 'You take your time, and almost make it by, but the roar the Gnoll lets loose when it finally does see you actually, physically harms you for one point of damage. You learn something about being a better sneaker (+1 sneaky)',
+      tieText: 'You do Okay: take 1 damage, gain 1 sneaky',
       tieDamage: 1,
-      successText: 'That lump of grass is no wiser, and neither is the Gnoll. You sneak past with no problem, and learn something about being sneaky in the process (+1 sneaky)',
+      successText: 'You do great: take no damage, gain 1 sneaky',
       healing: 0
     },
     optionTwo: {
-      buttonText: 'Punch The Gnoll',
-      eventType: 'fight',
-      missText: 'That was not very smart. The Gnoll smacks you away as you advance, causing 2 points of damage. At least you are past the Grassy Gnoll, right?',
-      missDamage: 2
-    },
-    optionThree: {
-      buttonText: 'Try and Distract The Gnoll',
+      buttonText: 'Use your wit and guile',
       eventType: 'cunning',
       skillTarget: 2,
-      missText: 'You throw a stone to try and distract the Gnoll, but end up hitting it in the face. Unhappy Gnoll makes for a damaged Rogue, take two points of damage, however you do learn something about how distractions should work (+1 cunning)',
+      missText: 'You do not do well: take 2 damage gain 1 cunning',
       missDamage: 2,
-      tieText: 'You carefully aim and throw a rock beyond the Gnoll to try and draw its attention away. The Gnoll, surprised by the rock is momentarily shocked, but not long enough for you to get by without being swatted at. Take one point of damage, and learn something about how distractions work (+1 cunning)',
+      tieText: 'You do Okay: take 1 damage, gain 1 cunning',
       tieDamage: 1,
-      successText: 'After evaluating your surroundings you decide to throw a rock at a large tree near the Gnoll. The rock hitting the tree causes a loud bang, and several fruits drop from the tree taking the Gnoll by complete surprise. You make it past unscathed, and learn a little something about effective distractions (+1 cunning)',
+      successText: 'You do great: take no damage, gain 1 cunning',
+      healing: 0
+    },
+    optionThree: {
+      buttonText: 'Be a dashing rogue and try and talk your way through it',
+      eventType: 'dashing',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 dashing',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 dashing',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 dashing',
       healing: 0
     }
   },
   1000008 : {
-    eventName: 'A Grassy Knoll 8',
-    eventInitialText: 'A Gnoll, but it is covered in grass. 8',
+    eventName: 'A Normal Event',
+    eventInitialText: 'You encounter something that needs to get done.',
     optionOne: {
-      buttonText: 'Sneak Past The Gnoll',
+      buttonText: 'Be sneaky',
       eventType: 'sneak',
       skillTarget: 2,
-      missText: 'It spotted you! You take two points of damage in the ensuing tussel, but you learn a little something about being sneaky (+1 sneaky)',
+      missText: 'You do not do well: take 2 damage gain 1 sneaky',
       missDamage: 2,
-      tieText: 'You take your time, and almost make it by, but the roar the Gnoll lets loose when it finally does see you actually, physically harms you for one point of damage. You learn something about being a better sneaker (+1 sneaky)',
+      tieText: 'You do Okay: take 1 damage, gain 1 sneaky',
       tieDamage: 1,
-      successText: 'That lump of grass is no wiser, and neither is the Gnoll. You sneak past with no problem, and learn something about being sneaky in the process (+1 sneaky)',
+      successText: 'You do great: take no damage, gain 1 sneaky',
       healing: 0
     },
     optionTwo: {
-      buttonText: 'Punch The Gnoll',
-      eventType: 'fight',
-      missText: 'That was not very smart. The Gnoll smacks you away as you advance, causing 2 points of damage. At least you are past the Grassy Gnoll, right?',
-      missDamage: 2
-    },
-    optionThree: {
-      buttonText: 'Try and Distract The Gnoll',
+      buttonText: 'Use your wit and guile',
       eventType: 'cunning',
       skillTarget: 2,
-      missText: 'You throw a stone to try and distract the Gnoll, but end up hitting it in the face. Unhappy Gnoll makes for a damaged Rogue, take two points of damage, however you do learn something about how distractions should work (+1 cunning)',
+      missText: 'You do not do well: take 2 damage gain 1 cunning',
       missDamage: 2,
-      tieText: 'You carefully aim and throw a rock beyond the Gnoll to try and draw its attention away. The Gnoll, surprised by the rock is momentarily shocked, but not long enough for you to get by without being swatted at. Take one point of damage, and learn something about how distractions work (+1 cunning)',
+      tieText: 'You do Okay: take 1 damage, gain 1 cunning',
       tieDamage: 1,
-      successText: 'After evaluating your surroundings you decide to throw a rock at a large tree near the Gnoll. The rock hitting the tree causes a loud bang, and several fruits drop from the tree taking the Gnoll by complete surprise. You make it past unscathed, and learn a little something about effective distractions (+1 cunning)',
+      successText: 'You do great: take no damage, gain 1 cunning',
+      healing: 0
+    },
+    optionThree: {
+      buttonText: 'Be a dashing rogue and try and talk your way through it',
+      eventType: 'dashing',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 dashing',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 dashing',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 dashing',
       healing: 0
     }
   },
   1000009 : {
-    eventName: 'A Grassy Knoll 9 ',
-    eventInitialText: 'A Gnoll, but it is covered in grass. 9',
+    eventName: 'A Normal Event',
+    eventInitialText: 'You encounter something that needs to get done.',
     optionOne: {
-      buttonText: 'Sneak Past The Gnoll',
+      buttonText: 'Be sneaky',
       eventType: 'sneak',
       skillTarget: 2,
-      missText: 'It spotted you! You take two points of damage in the ensuing tussel, but you learn a little something about being sneaky (+1 sneaky)',
+      missText: 'You do not do well: take 2 damage gain 1 sneaky',
       missDamage: 2,
-      tieText: 'You take your time, and almost make it by, but the roar the Gnoll lets loose when it finally does see you actually, physically harms you for one point of damage. You learn something about being a better sneaker (+1 sneaky)',
+      tieText: 'You do Okay: take 1 damage, gain 1 sneaky',
       tieDamage: 1,
-      successText: 'That lump of grass is no wiser, and neither is the Gnoll. You sneak past with no problem, and learn something about being sneaky in the process (+1 sneaky)',
+      successText: 'You do great: take no damage, gain 1 sneaky',
       healing: 0
     },
     optionTwo: {
-      buttonText: 'Punch The Gnoll',
-      eventType: 'fight',
-      missText: 'That was not very smart. The Gnoll smacks you away as you advance, causing 2 points of damage. At least you are past the Grassy Gnoll, right?',
-      missDamage: 2
-    },
-    optionThree: {
-      buttonText: 'Try and Distract The Gnoll',
+      buttonText: 'Use your wit and guile',
       eventType: 'cunning',
       skillTarget: 2,
-      missText: 'You throw a stone to try and distract the Gnoll, but end up hitting it in the face. Unhappy Gnoll makes for a damaged Rogue, take two points of damage, however you do learn something about how distractions should work (+1 cunning)',
+      missText: 'You do not do well: take 2 damage gain 1 cunning',
       missDamage: 2,
-      tieText: 'You carefully aim and throw a rock beyond the Gnoll to try and draw its attention away. The Gnoll, surprised by the rock is momentarily shocked, but not long enough for you to get by without being swatted at. Take one point of damage, and learn something about how distractions work (+1 cunning)',
+      tieText: 'You do Okay: take 1 damage, gain 1 cunning',
       tieDamage: 1,
-      successText: 'After evaluating your surroundings you decide to throw a rock at a large tree near the Gnoll. The rock hitting the tree causes a loud bang, and several fruits drop from the tree taking the Gnoll by complete surprise. You make it past unscathed, and learn a little something about effective distractions (+1 cunning)',
+      successText: 'You do great: take no damage, gain 1 cunning',
+      healing: 0
+    },
+    optionThree: {
+      buttonText: 'Be a dashing rogue and try and talk your way through it',
+      eventType: 'dashing',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 dashing',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 dashing',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 dashing',
       healing: 0
     }
   },
   10000010 : {
-    eventName: 'A Grassy Knoll 10',
-    eventInitialText: 'A Gnoll, but it is covered in grass. 10',
+    eventName: 'A Normal Event',
+    eventInitialText: 'You encounter something that needs to get done.',
     optionOne: {
-      buttonText: 'Sneak Past The Gnoll',
+      buttonText: 'Be sneaky',
       eventType: 'sneak',
       skillTarget: 2,
-      missText: 'It spotted you! You take two points of damage in the ensuing tussel, but you learn a little something about being sneaky (+1 sneaky)',
+      missText: 'You do not do well: take 2 damage gain 1 sneaky',
       missDamage: 2,
-      tieText: 'You take your time, and almost make it by, but the roar the Gnoll lets loose when it finally does see you actually, physically harms you for one point of damage. You learn something about being a better sneaker (+1 sneaky)',
+      tieText: 'You do Okay: take 1 damage, gain 1 sneaky',
       tieDamage: 1,
-      successText: 'That lump of grass is no wiser, and neither is the Gnoll. You sneak past with no problem, and learn something about being sneaky in the process (+1 sneaky)',
+      successText: 'You do great: take no damage, gain 1 sneaky',
       healing: 0
     },
     optionTwo: {
-      buttonText: 'Punch The Gnoll',
-      eventType: 'fight',
-      missText: 'That was not very smart. The Gnoll smacks you away as you advance, causing 2 points of damage. At least you are past the Grassy Gnoll, right?',
-      missDamage: 2
-    },
-    optionThree: {
-      buttonText: 'Try and Distract The Gnoll',
+      buttonText: 'Use your wit and guile',
       eventType: 'cunning',
       skillTarget: 2,
-      missText: 'You throw a stone to try and distract the Gnoll, but end up hitting it in the face. Unhappy Gnoll makes for a damaged Rogue, take two points of damage, however you do learn something about how distractions should work (+1 cunning)',
+      missText: 'You do not do well: take 2 damage gain 1 cunning',
       missDamage: 2,
-      tieText: 'You carefully aim and throw a rock beyond the Gnoll to try and draw its attention away. The Gnoll, surprised by the rock is momentarily shocked, but not long enough for you to get by without being swatted at. Take one point of damage, and learn something about how distractions work (+1 cunning)',
+      tieText: 'You do Okay: take 1 damage, gain 1 cunning',
       tieDamage: 1,
-      successText: 'After evaluating your surroundings you decide to throw a rock at a large tree near the Gnoll. The rock hitting the tree causes a loud bang, and several fruits drop from the tree taking the Gnoll by complete surprise. You make it past unscathed, and learn a little something about effective distractions (+1 cunning)',
+      successText: 'You do great: take no damage, gain 1 cunning',
+      healing: 0
+    },
+    optionThree: {
+      buttonText: 'Be a dashing rogue and try and talk your way through it',
+      eventType: 'dashing',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 dashing',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 dashing',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 dashing',
       healing: 0
     }
   },
   2000001 : {
-    eventName: 'A Grassy Knoll 1-2',
-    eventInitialText: 'A Gnoll, but it is covered in grass.',
+    eventName: 'A Normal Event',
+    eventInitialText: 'You encounter something that needs to get done.',
     optionOne: {
-      buttonText: 'Sneak Past The Gnoll'
+      buttonText: 'Be sneaky',
+      eventType: 'sneak',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 sneaky',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 sneaky',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 sneaky',
+      healing: 0
     },
     optionTwo: {
-      buttonText: 'Punch The Gnoll'
+      buttonText: 'Use your wit and guile',
+      eventType: 'cunning',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 cunning',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 cunning',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 cunning',
+      healing: 0
     },
     optionThree: {
-      buttonText: 'Try and Distract The Gnoll'
+      buttonText: 'Be a dashing rogue and try and talk your way through it',
+      eventType: 'dashing',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 dashing',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 dashing',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 dashing',
+      healing: 0
     }
   },
   2000002 : {
-    eventName: 'A Grassy Knoll 2-2',
-    eventInitialText: 'A Gnoll, but it is covered in grass.',
+    eventName: 'A Normal Event',
+    eventInitialText: 'You encounter something that needs to get done.',
     optionOne: {
-      buttonText: 'Sneak Past The Gnoll'
+      buttonText: 'Be sneaky',
+      eventType: 'sneak',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 sneaky',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 sneaky',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 sneaky',
+      healing: 0
     },
     optionTwo: {
-      buttonText: 'Punch The Gnoll'
+      buttonText: 'Use your wit and guile',
+      eventType: 'cunning',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 cunning',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 cunning',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 cunning',
+      healing: 0
     },
     optionThree: {
-      buttonText: 'Try and Distract The Gnoll'
+      buttonText: 'Be a dashing rogue and try and talk your way through it',
+      eventType: 'dashing',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 dashing',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 dashing',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 dashing',
+      healing: 0
     }
   },
   2000003 : {
-    eventName: 'A Grassy Knoll 3-2',
-    eventInitialText: 'A Gnoll, but it is covered in grass.',
+    eventName: 'A Normal Event',
+    eventInitialText: 'You encounter something that needs to get done.',
     optionOne: {
-      buttonText: 'Sneak Past The Gnoll'
+      buttonText: 'Be sneaky',
+      eventType: 'sneak',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 sneaky',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 sneaky',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 sneaky',
+      healing: 0
     },
     optionTwo: {
-      buttonText: 'Punch The Gnoll'
+      buttonText: 'Use your wit and guile',
+      eventType: 'cunning',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 cunning',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 cunning',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 cunning',
+      healing: 0
     },
     optionThree: {
-      buttonText: 'Try and Distract The Gnoll'
+      buttonText: 'Be a dashing rogue and try and talk your way through it',
+      eventType: 'dashing',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 dashing',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 dashing',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 dashing',
+      healing: 0
     }
   },
   2000004 : {
-    eventName: 'A Grassy Knoll 4-2',
-    eventInitialText: 'A Gnoll, but it is covered in grass.',
+    eventName: 'A Normal Event',
+    eventInitialText: 'You encounter something that needs to get done.',
     optionOne: {
-      buttonText: 'Sneak Past The Gnoll'
+      buttonText: 'Be sneaky',
+      eventType: 'sneak',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 sneaky',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 sneaky',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 sneaky',
+      healing: 0
     },
     optionTwo: {
-      buttonText: 'Punch The Gnoll'
+      buttonText: 'Use your wit and guile',
+      eventType: 'cunning',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 cunning',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 cunning',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 cunning',
+      healing: 0
     },
     optionThree: {
-      buttonText: 'Try and Distract The Gnoll'
+      buttonText: 'Be a dashing rogue and try and talk your way through it',
+      eventType: 'dashing',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 dashing',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 dashing',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 dashing',
+      healing: 0
     }
   },
   2000005 : {
-    eventName: 'A Grassy Knoll 5-2',
-    eventInitialText: 'A Gnoll, but it is covered in grass.',
+    eventName: 'An Dangerous Event',
+    eventInitialText: 'You encounter something dangerous that needs to be avoided.',
     optionOne: {
-      buttonText: 'Sneak Past The Gnoll'
+      buttonText: 'Fight',
+      eventType: 'fight',
+      missText: 'Fighting is not ever going to end well for you: take 2 damage',
+      missDamage: 2,
     },
     optionTwo: {
-      buttonText: 'Punch The Gnoll'
+      buttonText: 'Be sneaky',
+      eventType: 'sneak',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 sneaky',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 sneaky',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 sneaky',
+      healing: 0
     },
     optionThree: {
-      buttonText: 'Try and Distract The Gnoll'
+      buttonText: 'Use your wit and guile',
+      eventType: 'cunning',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 cunning',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 cunning',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 cunning',
+      healing: 0
     }
   },
   2000006 : {
-    eventName: 'A Grassy Knoll 6-2',
-    eventInitialText: 'A Gnoll, but it is covered in grass.',
+    eventName: 'An Dangerous Event',
+    eventInitialText: 'You encounter something dangerous that needs to be avoided.',
     optionOne: {
-      buttonText: 'Sneak Past The Gnoll'
+      buttonText: 'Fight',
+      eventType: 'fight',
+      missText: 'Fighting is not ever going to end well for you: take 2 damage',
+      missDamage: 2,
     },
     optionTwo: {
-      buttonText: 'Punch The Gnoll'
+      buttonText: 'Be sneaky',
+      eventType: 'sneak',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 sneaky',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 sneaky',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 sneaky',
+      healing: 0
     },
     optionThree: {
-      buttonText: 'Try and Distract The Gnoll'
+      buttonText: 'Use your wit and guile',
+      eventType: 'cunning',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 cunning',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 cunning',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 cunning',
+      healing: 0
     }
   },
   2000007 : {
-    eventName: 'A Grassy Knoll 7-2',
-    eventInitialText: 'A Gnoll, but it is covered in grass.',
+    eventName: 'An Dangerous Event',
+    eventInitialText: 'You encounter something dangerous that needs to be avoided.',
     optionOne: {
-      buttonText: 'Sneak Past The Gnoll'
+      buttonText: 'Fight',
+      eventType: 'fight',
+      missText: 'Fighting is not ever going to end well for you: take 2 damage',
+      missDamage: 2,
     },
     optionTwo: {
-      buttonText: 'Punch The Gnoll'
+      buttonText: 'Be sneaky',
+      eventType: 'sneak',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 sneaky',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 sneaky',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 sneaky',
+      healing: 0
     },
     optionThree: {
-      buttonText: 'Try and Distract The Gnoll'
+      buttonText: 'Use your wit and guile',
+      eventType: 'cunning',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 cunning',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 cunning',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 cunning',
+      healing: 0
     }
   },
   2000008 : {
-    eventName: 'A Grassy Knoll 8-2',
-    eventInitialText: 'A Gnoll, but it is covered in grass.',
+    eventName: 'Another Dangerous Event',
+    eventInitialText: 'You encounter something dangerous that needs to be avoided.',
     optionOne: {
-      buttonText: 'Sneak Past The Gnoll'
+      buttonText: 'Fight',
+      eventType: 'fight',
+      missText: 'Fighting is not ever going to end well for you: take 2 damage',
+      missDamage: 2,
     },
     optionTwo: {
-      buttonText: 'Punch The Gnoll'
+      buttonText: 'Use your wit and guile',
+      eventType: 'cunning',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 cunning',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 cunning',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 cunning',
+      healing: 0
     },
     optionThree: {
-      buttonText: 'Try and Distract The Gnoll'
+      buttonText: 'Be a dashing rogue and try and talk your way through it',
+      eventType: 'dashing',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 dashing',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 dashing',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 dashing',
+      healing: 0
     }
   },
   2000009 : {
-    eventName: 'A Grassy Knoll 9-2',
-    eventInitialText: 'A Gnoll, but it is covered in grass.',
+    eventName: 'Another Dangerous Event',
+    eventInitialText: 'You encounter something dangerous that needs to be avoided.',
     optionOne: {
-      buttonText: 'Sneak Past The Gnoll'
+      buttonText: 'Fight',
+      eventType: 'fight',
+      missText: 'Fighting is not ever going to end well for you: take 2 damage',
+      missDamage: 2,
     },
     optionTwo: {
-      buttonText: 'Punch The Gnoll'
+      buttonText: 'Use your wit and guile',
+      eventType: 'cunning',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 cunning',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 cunning',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 cunning',
+      healing: 0
     },
     optionThree: {
-      buttonText: 'Try and Distract The Gnoll'
+      buttonText: 'Be a dashing rogue and try and talk your way through it',
+      eventType: 'dashing',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 dashing',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 dashing',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 dashing',
+      healing: 0
     }
   },
   20000010 : {
-    eventName: 'A Grassy Knoll 10-2',
-    eventInitialText: 'A Gnoll, but it is covered in grass.',
+    eventName: 'Another Dangerous Event',
+    eventInitialText: 'You encounter something dangerous that needs to be avoided.',
     optionOne: {
-      buttonText: 'Sneak Past The Gnoll'
+      buttonText: 'Fight',
+      eventType: 'fight',
+      missText: 'Fighting is not ever going to end well for you: take 2 damage',
+      missDamage: 2,
     },
     optionTwo: {
-      buttonText: 'Punch The Gnoll'
+      buttonText: 'Use your wit and guile',
+      eventType: 'cunning',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 cunning',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 cunning',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 cunning',
+      healing: 0
     },
     optionThree: {
-      buttonText: 'Try and Distract The Gnoll'
+      buttonText: 'Be a dashing rogue and try and talk your way through it',
+      eventType: 'dashing',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 dashing',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 dashing',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 dashing',
+      healing: 0
+    }
+  },
+  3000001 : {
+    eventName: 'A Normal Event',
+    eventInitialText: 'You encounter something that needs to get done.',
+    optionOne: {
+      buttonText: 'Be sneaky',
+      eventType: 'sneak',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 sneaky',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 sneaky',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 sneaky',
+      healing: 0
+    },
+    optionTwo: {
+      buttonText: 'Use your wit and guile',
+      eventType: 'cunning',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 cunning',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 cunning',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 cunning',
+      healing: 0
+    },
+    optionThree: {
+      buttonText: 'Be a dashing rogue and try and talk your way through it',
+      eventType: 'dashing',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 dashing',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 dashing',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 dashing',
+      healing: 0
+    }
+  },
+  3000002 : {
+    eventName: 'A Normal Event',
+    eventInitialText: 'You encounter something that needs to get done.',
+    optionOne: {
+      buttonText: 'Be sneaky',
+      eventType: 'sneak',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 sneaky',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 sneaky',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 sneaky',
+      healing: 0
+    },
+    optionTwo: {
+      buttonText: 'Use your wit and guile',
+      eventType: 'cunning',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 cunning',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 cunning',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 cunning',
+      healing: 0
+    },
+    optionThree: {
+      buttonText: 'Be a dashing rogue and try and talk your way through it',
+      eventType: 'dashing',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 dashing',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 dashing',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 dashing',
+      healing: 0
+    }
+  },
+  3000003 : {
+    eventName: 'A Normal Event',
+    eventInitialText: 'You encounter something that needs to get done.',
+    optionOne: {
+      buttonText: 'Be sneaky',
+      eventType: 'sneak',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 sneaky',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 sneaky',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 sneaky',
+      healing: 0
+    },
+    optionTwo: {
+      buttonText: 'Use your wit and guile',
+      eventType: 'cunning',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 cunning',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 cunning',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 cunning',
+      healing: 0
+    },
+    optionThree: {
+      buttonText: 'Be a dashing rogue and try and talk your way through it',
+      eventType: 'dashing',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 dashing',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 dashing',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 dashing',
+      healing: 0
+    }
+  },
+  3000004 : {
+    eventName: 'A Normal Event',
+    eventInitialText: 'You encounter something that needs to get done.',
+    optionOne: {
+      buttonText: 'Be sneaky',
+      eventType: 'sneak',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 sneaky',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 sneaky',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 sneaky',
+      healing: 0
+    },
+    optionTwo: {
+      buttonText: 'Use your wit and guile',
+      eventType: 'cunning',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 cunning',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 cunning',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 cunning',
+      healing: 0
+    },
+    optionThree: {
+      buttonText: 'Be a dashing rogue and try and talk your way through it',
+      eventType: 'dashing',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 dashing',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 dashing',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 dashing',
+      healing: 0
+    }
+  },
+  3000005 : {
+    eventName: 'An Dangerous Event',
+    eventInitialText: 'You encounter something dangerous that needs to be avoided.',
+    optionOne: {
+      buttonText: 'Fight',
+      eventType: 'fight',
+      missText: 'Fighting is not ever going to end well for you: take 2 damage',
+      missDamage: 2,
+    },
+    optionTwo: {
+      buttonText: 'Be sneaky',
+      eventType: 'sneak',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 sneaky',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 sneaky',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 sneaky',
+      healing: 0
+    },
+    optionThree: {
+      buttonText: 'Use your wit and guile',
+      eventType: 'cunning',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 cunning',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 cunning',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 cunning',
+      healing: 0
+    }
+  },
+  3000006 : {
+    eventName: 'An Dangerous Event',
+    eventInitialText: 'You encounter something dangerous that needs to be avoided.',
+    optionOne: {
+      buttonText: 'Fight',
+      eventType: 'fight',
+      missText: 'Fighting is not ever going to end well for you: take 2 damage',
+      missDamage: 2,
+    },
+    optionTwo: {
+      buttonText: 'Be sneaky',
+      eventType: 'sneak',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 sneaky',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 sneaky',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 sneaky',
+      healing: 0
+    },
+    optionThree: {
+      buttonText: 'Use your wit and guile',
+      eventType: 'cunning',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 cunning',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 cunning',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 cunning',
+      healing: 0
+    }
+  },
+  3000007 : {
+    eventName: 'An Dangerous Event',
+    eventInitialText: 'You encounter something dangerous that needs to be avoided.',
+    optionOne: {
+      buttonText: 'Fight',
+      eventType: 'fight',
+      missText: 'Fighting is not ever going to end well for you: take 2 damage',
+      missDamage: 2,
+    },
+    optionTwo: {
+      buttonText: 'Be sneaky',
+      eventType: 'sneak',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 sneaky',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 sneaky',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 sneaky',
+      healing: 0
+    },
+    optionThree: {
+      buttonText: 'Use your wit and guile',
+      eventType: 'cunning',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 cunning',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 cunning',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 cunning',
+      healing: 0
+    }
+  },
+  3000008 : {
+    eventName: 'Another Dangerous Event',
+    eventInitialText: 'You encounter something dangerous that needs to be avoided.',
+    optionOne: {
+      buttonText: 'Fight',
+      eventType: 'fight',
+      missText: 'Fighting is not ever going to end well for you: take 2 damage',
+      missDamage: 2,
+    },
+    optionTwo: {
+      buttonText: 'Use your wit and guile',
+      eventType: 'cunning',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 cunning',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 cunning',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 cunning',
+      healing: 0
+    },
+    optionThree: {
+      buttonText: 'Be a dashing rogue and try and talk your way through it',
+      eventType: 'dashing',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 dashing',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 dashing',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 dashing',
+      healing: 0
+    }
+  },
+  3000009 : {
+    eventName: 'Another Dangerous Event',
+    eventInitialText: 'You encounter something dangerous that needs to be avoided.',
+    optionOne: {
+      buttonText: 'Fight',
+      eventType: 'fight',
+      missText: 'Fighting is not ever going to end well for you: take 2 damage',
+      missDamage: 2,
+    },
+    optionTwo: {
+      buttonText: 'Use your wit and guile',
+      eventType: 'cunning',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 cunning',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 cunning',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 cunning',
+      healing: 0
+    },
+    optionThree: {
+      buttonText: 'Be a dashing rogue and try and talk your way through it',
+      eventType: 'dashing',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 dashing',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 dashing',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 dashing',
+      healing: 0
+    }
+  },
+  30000010 : {
+    eventName: 'Another Dangerous Event',
+    eventInitialText: 'You encounter something dangerous that needs to be avoided.',
+    optionOne: {
+      buttonText: 'Fight',
+      eventType: 'fight',
+      missText: 'Fighting is not ever going to end well for you: take 2 damage',
+      missDamage: 2,
+    },
+    optionTwo: {
+      buttonText: 'Use your wit and guile',
+      eventType: 'cunning',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 cunning',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 cunning',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 cunning',
+      healing: 0
+    },
+    optionThree: {
+      buttonText: 'Be a dashing rogue and try and talk your way through it',
+      eventType: 'dashing',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 dashing',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 dashing',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 dashing',
+      healing: 0
+    }
+  },
+  4000001 : {
+    eventName: 'A Normal Event',
+    eventInitialText: 'You encounter something that needs to get done.',
+    optionOne: {
+      buttonText: 'Be sneaky',
+      eventType: 'sneak',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 sneaky',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 sneaky',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 sneaky',
+      healing: 0
+    },
+    optionTwo: {
+      buttonText: 'Use your wit and guile',
+      eventType: 'cunning',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 cunning',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 cunning',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 cunning',
+      healing: 0
+    },
+    optionThree: {
+      buttonText: 'Be a dashing rogue and try and talk your way through it',
+      eventType: 'dashing',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 dashing',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 dashing',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 dashing',
+      healing: 0
+    }
+  },
+  4000002 : {
+    eventName: 'A Normal Event',
+    eventInitialText: 'You encounter something that needs to get done.',
+    optionOne: {
+      buttonText: 'Be sneaky',
+      eventType: 'sneak',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 sneaky',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 sneaky',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 sneaky',
+      healing: 0
+    },
+    optionTwo: {
+      buttonText: 'Use your wit and guile',
+      eventType: 'cunning',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 cunning',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 cunning',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 cunning',
+      healing: 0
+    },
+    optionThree: {
+      buttonText: 'Be a dashing rogue and try and talk your way through it',
+      eventType: 'dashing',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 dashing',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 dashing',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 dashing',
+      healing: 0
+    }
+  },
+  4000003 : {
+    eventName: 'A Normal Event',
+    eventInitialText: 'You encounter something that needs to get done.',
+    optionOne: {
+      buttonText: 'Be sneaky',
+      eventType: 'sneak',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 sneaky',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 sneaky',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 sneaky',
+      healing: 0
+    },
+    optionTwo: {
+      buttonText: 'Use your wit and guile',
+      eventType: 'cunning',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 cunning',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 cunning',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 cunning',
+      healing: 0
+    },
+    optionThree: {
+      buttonText: 'Be a dashing rogue and try and talk your way through it',
+      eventType: 'dashing',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 dashing',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 dashing',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 dashing',
+      healing: 0
+    }
+  },
+  4000004 : {
+    eventName: 'A Normal Event',
+    eventInitialText: 'You encounter something that needs to get done.',
+    optionOne: {
+      buttonText: 'Be sneaky',
+      eventType: 'sneak',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 sneaky',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 sneaky',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 sneaky',
+      healing: 0
+    },
+    optionTwo: {
+      buttonText: 'Use your wit and guile',
+      eventType: 'cunning',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 cunning',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 cunning',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 cunning',
+      healing: 0
+    },
+    optionThree: {
+      buttonText: 'Be a dashing rogue and try and talk your way through it',
+      eventType: 'dashing',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 dashing',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 dashing',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 dashing',
+      healing: 0
+    }
+  },
+  4000005 : {
+    eventName: 'An Dangerous Event',
+    eventInitialText: 'You encounter something dangerous that needs to be avoided.',
+    optionOne: {
+      buttonText: 'Fight',
+      eventType: 'fight',
+      missText: 'Fighting is not ever going to end well for you: take 2 damage',
+      missDamage: 2,
+    },
+    optionTwo: {
+      buttonText: 'Be sneaky',
+      eventType: 'sneak',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 sneaky',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 sneaky',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 sneaky',
+      healing: 0
+    },
+    optionThree: {
+      buttonText: 'Use your wit and guile',
+      eventType: 'cunning',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 cunning',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 cunning',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 cunning',
+      healing: 0
+    }
+  },
+  4000006 : {
+    eventName: 'An Dangerous Event',
+    eventInitialText: 'You encounter something dangerous that needs to be avoided.',
+    optionOne: {
+      buttonText: 'Fight',
+      eventType: 'fight',
+      missText: 'Fighting is not ever going to end well for you: take 2 damage',
+      missDamage: 2,
+    },
+    optionTwo: {
+      buttonText: 'Be sneaky',
+      eventType: 'sneak',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 sneaky',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 sneaky',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 sneaky',
+      healing: 0
+    },
+    optionThree: {
+      buttonText: 'Use your wit and guile',
+      eventType: 'cunning',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 cunning',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 cunning',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 cunning',
+      healing: 0
+    }
+  },
+  4000007 : {
+    eventName: 'An Dangerous Event',
+    eventInitialText: 'You encounter something dangerous that needs to be avoided.',
+    optionOne: {
+      buttonText: 'Fight',
+      eventType: 'fight',
+      missText: 'Fighting is not ever going to end well for you: take 2 damage',
+      missDamage: 2,
+    },
+    optionTwo: {
+      buttonText: 'Be sneaky',
+      eventType: 'sneak',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 sneaky',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 sneaky',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 sneaky',
+      healing: 0
+    },
+    optionThree: {
+      buttonText: 'Use your wit and guile',
+      eventType: 'cunning',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 cunning',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 cunning',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 cunning',
+      healing: 0
+    }
+  },
+  4000008 : {
+    eventName: 'Another Dangerous Event',
+    eventInitialText: 'You encounter something dangerous that needs to be avoided.',
+    optionOne: {
+      buttonText: 'Fight',
+      eventType: 'fight',
+      missText: 'Fighting is not ever going to end well for you: take 2 damage',
+      missDamage: 2,
+    },
+    optionTwo: {
+      buttonText: 'Use your wit and guile',
+      eventType: 'cunning',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 cunning',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 cunning',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 cunning',
+      healing: 0
+    },
+    optionThree: {
+      buttonText: 'Be a dashing rogue and try and talk your way through it',
+      eventType: 'dashing',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 dashing',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 dashing',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 dashing',
+      healing: 0
+    }
+  },
+  4000009 : {
+    eventName: 'Another Dangerous Event',
+    eventInitialText: 'You encounter something dangerous that needs to be avoided.',
+    optionOne: {
+      buttonText: 'Fight',
+      eventType: 'fight',
+      missText: 'Fighting is not ever going to end well for you: take 2 damage',
+      missDamage: 2,
+    },
+    optionTwo: {
+      buttonText: 'Use your wit and guile',
+      eventType: 'cunning',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 cunning',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 cunning',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 cunning',
+      healing: 0
+    },
+    optionThree: {
+      buttonText: 'Be a dashing rogue and try and talk your way through it',
+      eventType: 'dashing',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 dashing',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 dashing',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 dashing',
+      healing: 0
+    }
+  },
+  40000010 : {
+    eventName: 'Another Dangerous Event',
+    eventInitialText: 'You encounter something dangerous that needs to be avoided.',
+    optionOne: {
+      buttonText: 'Fight',
+      eventType: 'fight',
+      missText: 'Fighting is not ever going to end well for you: take 2 damage',
+      missDamage: 2,
+    },
+    optionTwo: {
+      buttonText: 'Use your wit and guile',
+      eventType: 'cunning',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 cunning',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 cunning',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 cunning',
+      healing: 0
+    },
+    optionThree: {
+      buttonText: 'Be a dashing rogue and try and talk your way through it',
+      eventType: 'dashing',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 dashing',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 dashing',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 dashing',
+      healing: 0
     }
   }
 };
