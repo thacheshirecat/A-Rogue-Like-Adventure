@@ -69,6 +69,7 @@ function OptionsUI(props)
           type: 'UPDATE_HP',
           newHP: newHP
         };
+        dispatch(action3);
       }
       //SUCCESS
       else
@@ -96,6 +97,7 @@ function OptionsUI(props)
           type: 'UPDATE_HP',
           newHP: newHP
         };
+        dispatch(action3);
       }
     }
 
@@ -304,22 +306,11 @@ function OptionsUI(props)
 
     //New Event Chooser
     ///////////////////
-    if(props.selectedCharacter.hp > 0)
-    {
-      const action = {
-        type: 'CHANGE_EVENT',
-        eventId: newEvent
-      };
-      dispatch(action);
-    }
-    else
-    {
-      const action = {
-        type: 'CHANGE_EVENT',
-        eventId: 'gameover'
-      };
-      dispatch(action);
-    }
+    const finalAction = {
+      type: 'CHANGE_EVENT',
+      eventId: newEvent
+    };
+    dispatch(finalAction);
 
   }
   //
@@ -387,6 +378,7 @@ function OptionsUI(props)
           type: 'UPDATE_HP',
           newHP: newHP
         };
+        dispatch(action3);
       }
       //SUCCESS
       else
@@ -414,6 +406,7 @@ function OptionsUI(props)
           type: 'UPDATE_HP',
           newHP: newHP
         };
+        dispatch(action3);
       }
     }
 
@@ -693,6 +686,7 @@ function OptionsUI(props)
           type: 'UPDATE_HP',
           newHP: newHP
         };
+        dispatch(action3);
       }
       //SUCCESS
       else
@@ -720,6 +714,7 @@ function OptionsUI(props)
           type: 'UPDATE_HP',
           newHP: newHP
         };
+        dispatch(action3);
       }
     }
 
@@ -952,7 +947,8 @@ OptionsUI.propTypes = {
   selectedCharacter: PropTypes. object,
   currentEvent: PropTypes.string,
   gamePhase: PropTypes.string,
-  currentDialogue: PropTypes.string
+  currentDialogue: PropTypes.string,
+  dispatch: PropTypes.func
 };
 
 export default connect()(OptionsUI);

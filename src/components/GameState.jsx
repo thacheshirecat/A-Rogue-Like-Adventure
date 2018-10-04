@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 
 import EventUI from './EventUI';
+import GameOver from './GameOver';
 
 function GameState(props)
 {
@@ -13,6 +14,20 @@ function GameState(props)
     selectedCharacter={props.selectedCharacter}
     gamePhase={props.gamePhase}
     currentDialogue={props.currentDialogue}/>;
+
+  if(props.gamePhase === 'gameover')
+  {
+    eventUI = <GameOver/>;
+  }
+  else
+  {
+    eventUI = <EventUI
+      eventData={props.eventData}
+      currentEvent={props.currentEvent}
+      selectedCharacter={props.selectedCharacter}
+      gamePhase={props.gamePhase}
+      currentDialogue={props.currentDialogue}/>;
+  }
 
   return(
     <div>
@@ -47,7 +62,7 @@ GameState.propTypes = {
   eventData: PropTypes.object,
   selectedCharacter: PropTypes. object,
   currentEvent: PropTypes.string,
-  gameState: PropTypes.string,
+  gamePhase: PropTypes.string,
   currentDialogue: PropTypes.string
 };
 

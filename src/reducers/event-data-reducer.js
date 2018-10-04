@@ -2080,6 +2080,1366 @@ const eventData = {
       successText: 'You do great: take no damage, gain 1 dashing',
       healing: 0
     }
+  },
+  7000001 : {
+    eventName: 'A Normal Event',
+    eventInitialText: 'You encounter something that needs to get done.',
+    optionOne: {
+      buttonText: 'Be sneaky',
+      eventType: 'sneak',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 sneaky',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 sneaky',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 sneaky',
+      healing: 0
+    },
+    optionTwo: {
+      buttonText: 'Use your wit and guile',
+      eventType: 'cunning',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 cunning',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 cunning',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 cunning',
+      healing: 0
+    },
+    optionThree: {
+      buttonText: 'Be a dashing rogue and try and talk your way through it',
+      eventType: 'dashing',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 dashing',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 dashing',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 dashing',
+      healing: 0
+    }
+  },
+  7000002 : {
+    eventName: 'A Normal Event',
+    eventInitialText: 'You encounter something that needs to get done.',
+    optionOne: {
+      buttonText: 'Be sneaky',
+      eventType: 'sneak',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 sneaky',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 sneaky',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 sneaky',
+      healing: 0
+    },
+    optionTwo: {
+      buttonText: 'Use your wit and guile',
+      eventType: 'cunning',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 cunning',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 cunning',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 cunning',
+      healing: 0
+    },
+    optionThree: {
+      buttonText: 'Be a dashing rogue and try and talk your way through it',
+      eventType: 'dashing',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 dashing',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 dashing',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 dashing',
+      healing: 0
+    }
+  },
+  7000003 : {
+    eventName: 'A Normal Event',
+    eventInitialText: 'You encounter something that needs to get done.',
+    optionOne: {
+      buttonText: 'Be sneaky',
+      eventType: 'sneak',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 sneaky',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 sneaky',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 sneaky',
+      healing: 0
+    },
+    optionTwo: {
+      buttonText: 'Use your wit and guile',
+      eventType: 'cunning',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 cunning',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 cunning',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 cunning',
+      healing: 0
+    },
+    optionThree: {
+      buttonText: 'Be a dashing rogue and try and talk your way through it',
+      eventType: 'dashing',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 dashing',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 dashing',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 dashing',
+      healing: 0
+    }
+  },
+  7000004 : {
+    eventName: 'A Normal Event',
+    eventInitialText: 'You encounter something that needs to get done.',
+    optionOne: {
+      buttonText: 'Be sneaky',
+      eventType: 'sneak',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 sneaky',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 sneaky',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 sneaky',
+      healing: 0
+    },
+    optionTwo: {
+      buttonText: 'Use your wit and guile',
+      eventType: 'cunning',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 cunning',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 cunning',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 cunning',
+      healing: 0
+    },
+    optionThree: {
+      buttonText: 'Be a dashing rogue and try and talk your way through it',
+      eventType: 'dashing',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 dashing',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 dashing',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 dashing',
+      healing: 0
+    }
+  },
+  7000005 : {
+    eventName: 'An Dangerous Event',
+    eventInitialText: 'You encounter something dangerous that needs to be avoided.',
+    optionOne: {
+      buttonText: 'Fight',
+      eventType: 'fight',
+      missText: 'Fighting is not ever going to end well for you: take 2 damage',
+      missDamage: 2,
+    },
+    optionTwo: {
+      buttonText: 'Be sneaky',
+      eventType: 'sneak',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 sneaky',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 sneaky',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 sneaky',
+      healing: 0
+    },
+    optionThree: {
+      buttonText: 'Use your wit and guile',
+      eventType: 'cunning',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 cunning',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 cunning',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 cunning',
+      healing: 0
+    }
+  },
+  7000006 : {
+    eventName: 'An Dangerous Event',
+    eventInitialText: 'You encounter something dangerous that needs to be avoided.',
+    optionOne: {
+      buttonText: 'Fight',
+      eventType: 'fight',
+      missText: 'Fighting is not ever going to end well for you: take 2 damage',
+      missDamage: 2,
+    },
+    optionTwo: {
+      buttonText: 'Be sneaky',
+      eventType: 'sneak',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 sneaky',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 sneaky',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 sneaky',
+      healing: 0
+    },
+    optionThree: {
+      buttonText: 'Use your wit and guile',
+      eventType: 'cunning',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 cunning',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 cunning',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 cunning',
+      healing: 0
+    }
+  },
+  7000007 : {
+    eventName: 'An Dangerous Event',
+    eventInitialText: 'You encounter something dangerous that needs to be avoided.',
+    optionOne: {
+      buttonText: 'Fight',
+      eventType: 'fight',
+      missText: 'Fighting is not ever going to end well for you: take 2 damage',
+      missDamage: 2,
+    },
+    optionTwo: {
+      buttonText: 'Be sneaky',
+      eventType: 'sneak',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 sneaky',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 sneaky',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 sneaky',
+      healing: 0
+    },
+    optionThree: {
+      buttonText: 'Use your wit and guile',
+      eventType: 'cunning',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 cunning',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 cunning',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 cunning',
+      healing: 0
+    }
+  },
+  7000008 : {
+    eventName: 'Another Dangerous Event',
+    eventInitialText: 'You encounter something dangerous that needs to be avoided.',
+    optionOne: {
+      buttonText: 'Fight',
+      eventType: 'fight',
+      missText: 'Fighting is not ever going to end well for you: take 2 damage',
+      missDamage: 2,
+    },
+    optionTwo: {
+      buttonText: 'Use your wit and guile',
+      eventType: 'cunning',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 cunning',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 cunning',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 cunning',
+      healing: 0
+    },
+    optionThree: {
+      buttonText: 'Be a dashing rogue and try and talk your way through it',
+      eventType: 'dashing',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 dashing',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 dashing',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 dashing',
+      healing: 0
+    }
+  },
+  7000009 : {
+    eventName: 'Another Dangerous Event',
+    eventInitialText: 'You encounter something dangerous that needs to be avoided.',
+    optionOne: {
+      buttonText: 'Fight',
+      eventType: 'fight',
+      missText: 'Fighting is not ever going to end well for you: take 2 damage',
+      missDamage: 2,
+    },
+    optionTwo: {
+      buttonText: 'Use your wit and guile',
+      eventType: 'cunning',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 cunning',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 cunning',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 cunning',
+      healing: 0
+    },
+    optionThree: {
+      buttonText: 'Be a dashing rogue and try and talk your way through it',
+      eventType: 'dashing',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 dashing',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 dashing',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 dashing',
+      healing: 0
+    }
+  },
+  70000010 : {
+    eventName: 'Another Dangerous Event',
+    eventInitialText: 'You encounter something dangerous that needs to be avoided.',
+    optionOne: {
+      buttonText: 'Fight',
+      eventType: 'fight',
+      missText: 'Fighting is not ever going to end well for you: take 2 damage',
+      missDamage: 2,
+    },
+    optionTwo: {
+      buttonText: 'Use your wit and guile',
+      eventType: 'cunning',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 cunning',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 cunning',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 cunning',
+      healing: 0
+    },
+    optionThree: {
+      buttonText: 'Be a dashing rogue and try and talk your way through it',
+      eventType: 'dashing',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 dashing',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 dashing',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 dashing',
+      healing: 0
+    }
+  },
+  8000001 : {
+    eventName: 'A Normal Event',
+    eventInitialText: 'You encounter something that needs to get done.',
+    optionOne: {
+      buttonText: 'Be sneaky',
+      eventType: 'sneak',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 sneaky',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 sneaky',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 sneaky',
+      healing: 0
+    },
+    optionTwo: {
+      buttonText: 'Use your wit and guile',
+      eventType: 'cunning',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 cunning',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 cunning',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 cunning',
+      healing: 0
+    },
+    optionThree: {
+      buttonText: 'Be a dashing rogue and try and talk your way through it',
+      eventType: 'dashing',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 dashing',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 dashing',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 dashing',
+      healing: 0
+    }
+  },
+  8000002 : {
+    eventName: 'A Normal Event',
+    eventInitialText: 'You encounter something that needs to get done.',
+    optionOne: {
+      buttonText: 'Be sneaky',
+      eventType: 'sneak',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 sneaky',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 sneaky',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 sneaky',
+      healing: 0
+    },
+    optionTwo: {
+      buttonText: 'Use your wit and guile',
+      eventType: 'cunning',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 cunning',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 cunning',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 cunning',
+      healing: 0
+    },
+    optionThree: {
+      buttonText: 'Be a dashing rogue and try and talk your way through it',
+      eventType: 'dashing',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 dashing',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 dashing',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 dashing',
+      healing: 0
+    }
+  },
+  8000003 : {
+    eventName: 'A Normal Event',
+    eventInitialText: 'You encounter something that needs to get done.',
+    optionOne: {
+      buttonText: 'Be sneaky',
+      eventType: 'sneak',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 sneaky',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 sneaky',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 sneaky',
+      healing: 0
+    },
+    optionTwo: {
+      buttonText: 'Use your wit and guile',
+      eventType: 'cunning',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 cunning',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 cunning',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 cunning',
+      healing: 0
+    },
+    optionThree: {
+      buttonText: 'Be a dashing rogue and try and talk your way through it',
+      eventType: 'dashing',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 dashing',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 dashing',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 dashing',
+      healing: 0
+    }
+  },
+  8000004 : {
+    eventName: 'A Normal Event',
+    eventInitialText: 'You encounter something that needs to get done.',
+    optionOne: {
+      buttonText: 'Be sneaky',
+      eventType: 'sneak',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 sneaky',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 sneaky',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 sneaky',
+      healing: 0
+    },
+    optionTwo: {
+      buttonText: 'Use your wit and guile',
+      eventType: 'cunning',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 cunning',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 cunning',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 cunning',
+      healing: 0
+    },
+    optionThree: {
+      buttonText: 'Be a dashing rogue and try and talk your way through it',
+      eventType: 'dashing',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 dashing',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 dashing',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 dashing',
+      healing: 0
+    }
+  },
+  8000005 : {
+    eventName: 'An Dangerous Event',
+    eventInitialText: 'You encounter something dangerous that needs to be avoided.',
+    optionOne: {
+      buttonText: 'Fight',
+      eventType: 'fight',
+      missText: 'Fighting is not ever going to end well for you: take 2 damage',
+      missDamage: 2,
+    },
+    optionTwo: {
+      buttonText: 'Be sneaky',
+      eventType: 'sneak',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 sneaky',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 sneaky',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 sneaky',
+      healing: 0
+    },
+    optionThree: {
+      buttonText: 'Use your wit and guile',
+      eventType: 'cunning',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 cunning',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 cunning',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 cunning',
+      healing: 0
+    }
+  },
+  8000006 : {
+    eventName: 'An Dangerous Event',
+    eventInitialText: 'You encounter something dangerous that needs to be avoided.',
+    optionOne: {
+      buttonText: 'Fight',
+      eventType: 'fight',
+      missText: 'Fighting is not ever going to end well for you: take 2 damage',
+      missDamage: 2,
+    },
+    optionTwo: {
+      buttonText: 'Be sneaky',
+      eventType: 'sneak',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 sneaky',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 sneaky',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 sneaky',
+      healing: 0
+    },
+    optionThree: {
+      buttonText: 'Use your wit and guile',
+      eventType: 'cunning',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 cunning',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 cunning',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 cunning',
+      healing: 0
+    }
+  },
+  8000007 : {
+    eventName: 'An Dangerous Event',
+    eventInitialText: 'You encounter something dangerous that needs to be avoided.',
+    optionOne: {
+      buttonText: 'Fight',
+      eventType: 'fight',
+      missText: 'Fighting is not ever going to end well for you: take 2 damage',
+      missDamage: 2,
+    },
+    optionTwo: {
+      buttonText: 'Be sneaky',
+      eventType: 'sneak',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 sneaky',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 sneaky',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 sneaky',
+      healing: 0
+    },
+    optionThree: {
+      buttonText: 'Use your wit and guile',
+      eventType: 'cunning',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 cunning',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 cunning',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 cunning',
+      healing: 0
+    }
+  },
+  8000008 : {
+    eventName: 'Another Dangerous Event',
+    eventInitialText: 'You encounter something dangerous that needs to be avoided.',
+    optionOne: {
+      buttonText: 'Fight',
+      eventType: 'fight',
+      missText: 'Fighting is not ever going to end well for you: take 2 damage',
+      missDamage: 2,
+    },
+    optionTwo: {
+      buttonText: 'Use your wit and guile',
+      eventType: 'cunning',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 cunning',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 cunning',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 cunning',
+      healing: 0
+    },
+    optionThree: {
+      buttonText: 'Be a dashing rogue and try and talk your way through it',
+      eventType: 'dashing',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 dashing',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 dashing',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 dashing',
+      healing: 0
+    }
+  },
+  8000009 : {
+    eventName: 'Another Dangerous Event',
+    eventInitialText: 'You encounter something dangerous that needs to be avoided.',
+    optionOne: {
+      buttonText: 'Fight',
+      eventType: 'fight',
+      missText: 'Fighting is not ever going to end well for you: take 2 damage',
+      missDamage: 2,
+    },
+    optionTwo: {
+      buttonText: 'Use your wit and guile',
+      eventType: 'cunning',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 cunning',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 cunning',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 cunning',
+      healing: 0
+    },
+    optionThree: {
+      buttonText: 'Be a dashing rogue and try and talk your way through it',
+      eventType: 'dashing',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 dashing',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 dashing',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 dashing',
+      healing: 0
+    }
+  },
+  80000010 : {
+    eventName: 'Another Dangerous Event',
+    eventInitialText: 'You encounter something dangerous that needs to be avoided.',
+    optionOne: {
+      buttonText: 'Fight',
+      eventType: 'fight',
+      missText: 'Fighting is not ever going to end well for you: take 2 damage',
+      missDamage: 2,
+    },
+    optionTwo: {
+      buttonText: 'Use your wit and guile',
+      eventType: 'cunning',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 cunning',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 cunning',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 cunning',
+      healing: 0
+    },
+    optionThree: {
+      buttonText: 'Be a dashing rogue and try and talk your way through it',
+      eventType: 'dashing',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 dashing',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 dashing',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 dashing',
+      healing: 0
+    }
+  },
+  9000001 : {
+    eventName: 'A Normal Event',
+    eventInitialText: 'You encounter something that needs to get done.',
+    optionOne: {
+      buttonText: 'Be sneaky',
+      eventType: 'sneak',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 sneaky',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 sneaky',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 sneaky',
+      healing: 0
+    },
+    optionTwo: {
+      buttonText: 'Use your wit and guile',
+      eventType: 'cunning',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 cunning',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 cunning',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 cunning',
+      healing: 0
+    },
+    optionThree: {
+      buttonText: 'Be a dashing rogue and try and talk your way through it',
+      eventType: 'dashing',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 dashing',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 dashing',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 dashing',
+      healing: 0
+    }
+  },
+  9000002 : {
+    eventName: 'A Normal Event',
+    eventInitialText: 'You encounter something that needs to get done.',
+    optionOne: {
+      buttonText: 'Be sneaky',
+      eventType: 'sneak',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 sneaky',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 sneaky',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 sneaky',
+      healing: 0
+    },
+    optionTwo: {
+      buttonText: 'Use your wit and guile',
+      eventType: 'cunning',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 cunning',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 cunning',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 cunning',
+      healing: 0
+    },
+    optionThree: {
+      buttonText: 'Be a dashing rogue and try and talk your way through it',
+      eventType: 'dashing',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 dashing',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 dashing',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 dashing',
+      healing: 0
+    }
+  },
+  9000003 : {
+    eventName: 'A Normal Event',
+    eventInitialText: 'You encounter something that needs to get done.',
+    optionOne: {
+      buttonText: 'Be sneaky',
+      eventType: 'sneak',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 sneaky',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 sneaky',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 sneaky',
+      healing: 0
+    },
+    optionTwo: {
+      buttonText: 'Use your wit and guile',
+      eventType: 'cunning',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 cunning',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 cunning',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 cunning',
+      healing: 0
+    },
+    optionThree: {
+      buttonText: 'Be a dashing rogue and try and talk your way through it',
+      eventType: 'dashing',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 dashing',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 dashing',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 dashing',
+      healing: 0
+    }
+  },
+  9000004 : {
+    eventName: 'A Normal Event',
+    eventInitialText: 'You encounter something that needs to get done.',
+    optionOne: {
+      buttonText: 'Be sneaky',
+      eventType: 'sneak',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 sneaky',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 sneaky',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 sneaky',
+      healing: 0
+    },
+    optionTwo: {
+      buttonText: 'Use your wit and guile',
+      eventType: 'cunning',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 cunning',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 cunning',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 cunning',
+      healing: 0
+    },
+    optionThree: {
+      buttonText: 'Be a dashing rogue and try and talk your way through it',
+      eventType: 'dashing',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 dashing',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 dashing',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 dashing',
+      healing: 0
+    }
+  },
+  9000005 : {
+    eventName: 'An Dangerous Event',
+    eventInitialText: 'You encounter something dangerous that needs to be avoided.',
+    optionOne: {
+      buttonText: 'Fight',
+      eventType: 'fight',
+      missText: 'Fighting is not ever going to end well for you: take 2 damage',
+      missDamage: 2,
+    },
+    optionTwo: {
+      buttonText: 'Be sneaky',
+      eventType: 'sneak',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 sneaky',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 sneaky',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 sneaky',
+      healing: 0
+    },
+    optionThree: {
+      buttonText: 'Use your wit and guile',
+      eventType: 'cunning',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 cunning',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 cunning',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 cunning',
+      healing: 0
+    }
+  },
+  9000006 : {
+    eventName: 'An Dangerous Event',
+    eventInitialText: 'You encounter something dangerous that needs to be avoided.',
+    optionOne: {
+      buttonText: 'Fight',
+      eventType: 'fight',
+      missText: 'Fighting is not ever going to end well for you: take 2 damage',
+      missDamage: 2,
+    },
+    optionTwo: {
+      buttonText: 'Be sneaky',
+      eventType: 'sneak',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 sneaky',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 sneaky',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 sneaky',
+      healing: 0
+    },
+    optionThree: {
+      buttonText: 'Use your wit and guile',
+      eventType: 'cunning',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 cunning',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 cunning',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 cunning',
+      healing: 0
+    }
+  },
+  9000007 : {
+    eventName: 'An Dangerous Event',
+    eventInitialText: 'You encounter something dangerous that needs to be avoided.',
+    optionOne: {
+      buttonText: 'Fight',
+      eventType: 'fight',
+      missText: 'Fighting is not ever going to end well for you: take 2 damage',
+      missDamage: 2,
+    },
+    optionTwo: {
+      buttonText: 'Be sneaky',
+      eventType: 'sneak',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 sneaky',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 sneaky',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 sneaky',
+      healing: 0
+    },
+    optionThree: {
+      buttonText: 'Use your wit and guile',
+      eventType: 'cunning',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 cunning',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 cunning',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 cunning',
+      healing: 0
+    }
+  },
+  9000008 : {
+    eventName: 'Another Dangerous Event',
+    eventInitialText: 'You encounter something dangerous that needs to be avoided.',
+    optionOne: {
+      buttonText: 'Fight',
+      eventType: 'fight',
+      missText: 'Fighting is not ever going to end well for you: take 2 damage',
+      missDamage: 2,
+    },
+    optionTwo: {
+      buttonText: 'Use your wit and guile',
+      eventType: 'cunning',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 cunning',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 cunning',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 cunning',
+      healing: 0
+    },
+    optionThree: {
+      buttonText: 'Be a dashing rogue and try and talk your way through it',
+      eventType: 'dashing',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 dashing',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 dashing',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 dashing',
+      healing: 0
+    }
+  },
+  9000009 : {
+    eventName: 'Another Dangerous Event',
+    eventInitialText: 'You encounter something dangerous that needs to be avoided.',
+    optionOne: {
+      buttonText: 'Fight',
+      eventType: 'fight',
+      missText: 'Fighting is not ever going to end well for you: take 2 damage',
+      missDamage: 2,
+    },
+    optionTwo: {
+      buttonText: 'Use your wit and guile',
+      eventType: 'cunning',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 cunning',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 cunning',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 cunning',
+      healing: 0
+    },
+    optionThree: {
+      buttonText: 'Be a dashing rogue and try and talk your way through it',
+      eventType: 'dashing',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 dashing',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 dashing',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 dashing',
+      healing: 0
+    }
+  },
+  90000010 : {
+    eventName: 'Another Dangerous Event',
+    eventInitialText: 'You encounter something dangerous that needs to be avoided.',
+    optionOne: {
+      buttonText: 'Fight',
+      eventType: 'fight',
+      missText: 'Fighting is not ever going to end well for you: take 2 damage',
+      missDamage: 2,
+    },
+    optionTwo: {
+      buttonText: 'Use your wit and guile',
+      eventType: 'cunning',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 cunning',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 cunning',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 cunning',
+      healing: 0
+    },
+    optionThree: {
+      buttonText: 'Be a dashing rogue and try and talk your way through it',
+      eventType: 'dashing',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 dashing',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 dashing',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 dashing',
+      healing: 0
+    }
+  },
+  10000001 : {
+    eventName: 'A Normal Event',
+    eventInitialText: 'You encounter something that needs to get done.',
+    optionOne: {
+      buttonText: 'Be sneaky',
+      eventType: 'sneak',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 sneaky',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 sneaky',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 sneaky',
+      healing: 0
+    },
+    optionTwo: {
+      buttonText: 'Use your wit and guile',
+      eventType: 'cunning',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 cunning',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 cunning',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 cunning',
+      healing: 0
+    },
+    optionThree: {
+      buttonText: 'Be a dashing rogue and try and talk your way through it',
+      eventType: 'dashing',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 dashing',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 dashing',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 dashing',
+      healing: 0
+    }
+  },
+  10000002 : {
+    eventName: 'A Normal Event',
+    eventInitialText: 'You encounter something that needs to get done.',
+    optionOne: {
+      buttonText: 'Be sneaky',
+      eventType: 'sneak',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 sneaky',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 sneaky',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 sneaky',
+      healing: 0
+    },
+    optionTwo: {
+      buttonText: 'Use your wit and guile',
+      eventType: 'cunning',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 cunning',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 cunning',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 cunning',
+      healing: 0
+    },
+    optionThree: {
+      buttonText: 'Be a dashing rogue and try and talk your way through it',
+      eventType: 'dashing',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 dashing',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 dashing',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 dashing',
+      healing: 0
+    }
+  },
+  10000003 : {
+    eventName: 'A Normal Event',
+    eventInitialText: 'You encounter something that needs to get done.',
+    optionOne: {
+      buttonText: 'Be sneaky',
+      eventType: 'sneak',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 sneaky',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 sneaky',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 sneaky',
+      healing: 0
+    },
+    optionTwo: {
+      buttonText: 'Use your wit and guile',
+      eventType: 'cunning',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 cunning',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 cunning',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 cunning',
+      healing: 0
+    },
+    optionThree: {
+      buttonText: 'Be a dashing rogue and try and talk your way through it',
+      eventType: 'dashing',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 dashing',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 dashing',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 dashing',
+      healing: 0
+    }
+  },
+  10000004 : {
+    eventName: 'A Normal Event',
+    eventInitialText: 'You encounter something that needs to get done.',
+    optionOne: {
+      buttonText: 'Be sneaky',
+      eventType: 'sneak',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 sneaky',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 sneaky',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 sneaky',
+      healing: 0
+    },
+    optionTwo: {
+      buttonText: 'Use your wit and guile',
+      eventType: 'cunning',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 cunning',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 cunning',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 cunning',
+      healing: 0
+    },
+    optionThree: {
+      buttonText: 'Be a dashing rogue and try and talk your way through it',
+      eventType: 'dashing',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 dashing',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 dashing',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 dashing',
+      healing: 0
+    }
+  },
+  10000005 : {
+    eventName: 'An Dangerous Event',
+    eventInitialText: 'You encounter something dangerous that needs to be avoided.',
+    optionOne: {
+      buttonText: 'Fight',
+      eventType: 'fight',
+      missText: 'Fighting is not ever going to end well for you: take 2 damage',
+      missDamage: 2,
+    },
+    optionTwo: {
+      buttonText: 'Be sneaky',
+      eventType: 'sneak',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 sneaky',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 sneaky',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 sneaky',
+      healing: 0
+    },
+    optionThree: {
+      buttonText: 'Use your wit and guile',
+      eventType: 'cunning',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 cunning',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 cunning',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 cunning',
+      healing: 0
+    }
+  },
+  10000006 : {
+    eventName: 'An Dangerous Event',
+    eventInitialText: 'You encounter something dangerous that needs to be avoided.',
+    optionOne: {
+      buttonText: 'Fight',
+      eventType: 'fight',
+      missText: 'Fighting is not ever going to end well for you: take 2 damage',
+      missDamage: 2,
+    },
+    optionTwo: {
+      buttonText: 'Be sneaky',
+      eventType: 'sneak',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 sneaky',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 sneaky',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 sneaky',
+      healing: 0
+    },
+    optionThree: {
+      buttonText: 'Use your wit and guile',
+      eventType: 'cunning',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 cunning',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 cunning',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 cunning',
+      healing: 0
+    }
+  },
+  10000007 : {
+    eventName: 'An Dangerous Event',
+    eventInitialText: 'You encounter something dangerous that needs to be avoided.',
+    optionOne: {
+      buttonText: 'Fight',
+      eventType: 'fight',
+      missText: 'Fighting is not ever going to end well for you: take 2 damage',
+      missDamage: 2,
+    },
+    optionTwo: {
+      buttonText: 'Be sneaky',
+      eventType: 'sneak',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 sneaky',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 sneaky',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 sneaky',
+      healing: 0
+    },
+    optionThree: {
+      buttonText: 'Use your wit and guile',
+      eventType: 'cunning',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 cunning',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 cunning',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 cunning',
+      healing: 0
+    }
+  },
+  10000008 : {
+    eventName: 'Another Dangerous Event',
+    eventInitialText: 'You encounter something dangerous that needs to be avoided.',
+    optionOne: {
+      buttonText: 'Fight',
+      eventType: 'fight',
+      missText: 'Fighting is not ever going to end well for you: take 2 damage',
+      missDamage: 2,
+    },
+    optionTwo: {
+      buttonText: 'Use your wit and guile',
+      eventType: 'cunning',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 cunning',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 cunning',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 cunning',
+      healing: 0
+    },
+    optionThree: {
+      buttonText: 'Be a dashing rogue and try and talk your way through it',
+      eventType: 'dashing',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 dashing',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 dashing',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 dashing',
+      healing: 0
+    }
+  },
+  10000009 : {
+    eventName: 'Another Dangerous Event',
+    eventInitialText: 'You encounter something dangerous that needs to be avoided.',
+    optionOne: {
+      buttonText: 'Fight',
+      eventType: 'fight',
+      missText: 'Fighting is not ever going to end well for you: take 2 damage',
+      missDamage: 2,
+    },
+    optionTwo: {
+      buttonText: 'Use your wit and guile',
+      eventType: 'cunning',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 cunning',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 cunning',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 cunning',
+      healing: 0
+    },
+    optionThree: {
+      buttonText: 'Be a dashing rogue and try and talk your way through it',
+      eventType: 'dashing',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 dashing',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 dashing',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 dashing',
+      healing: 0
+    }
+  },
+  100000010 : {
+    eventName: 'Another Dangerous Event',
+    eventInitialText: 'You encounter something dangerous that needs to be avoided.',
+    optionOne: {
+      buttonText: 'Fight',
+      eventType: 'fight',
+      missText: 'Fighting is not ever going to end well for you: take 2 damage',
+      missDamage: 2,
+    },
+    optionTwo: {
+      buttonText: 'Use your wit and guile',
+      eventType: 'cunning',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 cunning',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 cunning',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 cunning',
+      healing: 0
+    },
+    optionThree: {
+      buttonText: 'Be a dashing rogue and try and talk your way through it',
+      eventType: 'dashing',
+      skillTarget: 2,
+      missText: 'You do not do well: take 2 damage gain 1 dashing',
+      missDamage: 2,
+      tieText: 'You do Okay: take 1 damage, gain 1 dashing',
+      tieDamage: 1,
+      successText: 'You do great: take no damage, gain 1 dashing',
+      healing: 0
+    }
   }
 };
 
